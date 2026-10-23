@@ -1,0 +1,373 @@
+.prp-WelcomeRegistration-Container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(270deg, #FFFFFF 35%, #566B93 93%);
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.prp-WelcomeRegistration-Left {
+    display: flex;
+    flex: 0 0 43%;
+    min-width: 0;
+    min-height: 100vh;
+    padding: 48px 0 44px;
+    color: #FFFFFF;
+    box-sizing: border-box;
+}
+.prp-WelcomeRegistration-Content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 622px;
+    margin: 0 auto;
+    padding: 0 36px;
+    box-sizing: border-box;
+}
+.prp-WelcomeRegistration-Intro {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.prp-WelcomeRegistration-Intro h1 {
+    margin: 0;
+    max-width: 480px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.35;
+    color: #FFFFFF;
+}
+.prp-WelcomeRegistration-Intro p {
+    margin: 0;
+    max-width: 500px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.prp-WelcomeRegistration-Illustration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 290px;
+    margin: 14px 0 20px;
+    box-sizing: border-box;
+}
+.prp-WelcomeRegistration-Illustration img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.prp-WelcomeRegistration-Features {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.prp-WelcomeRegistration-Feature-Item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    min-height: 64px;
+    padding: 12px 16px;
+    border-radius: 14px;
+    background-color: #FFFFFF;
+    color: #132A56;
+    box-sizing: border-box;
+}
+.prp-WelcomeRegistration-Feature-Icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+}
+.prp-WelcomeRegistration-Feature-Icon img {
+    display: block;
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+.prp-WelcomeRegistration-Feature-Text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+.prp-WelcomeRegistration-Feature-Text h3 {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 17px;
+    color: #132A56;
+}
+.prp-WelcomeRegistration-Feature-Text p {
+    margin: 0;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #132A56;
+}
+.prp-WelcomeRegistration-Testimonial {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    max-width: 500px;
+    margin: 40px auto 0;
+    padding-top: 24px;
+    border-top: 1px solid #FFFFFF;
+    box-sizing: border-box;
+}
+.prp-WelcomeRegistration-Quote {
+    margin: 0;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.prp-WelcomeRegistration-Testimonial-Author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.prp-WelcomeRegistration-Author-Icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+.prp-WelcomeRegistration-Author-Icon img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.prp-WelcomeRegistration-Testimonial-Author p {
+    margin: 0;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+.prp-WelcomeRegistration-Right {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    justify-content: center;
+    min-width: 0;
+    min-height: 100vh;
+    padding: 178px 48px 60px;
+    box-sizing: border-box;
+}
+.prp-WelcomeRegistration-Form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    max-width: 720px;
+}
+.prp-WelcomeRegistration-Form-Header {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.prp-WelcomeRegistration-Form-Header h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #132A56;
+}
+.prp-WelcomeRegistration-Form-Header p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #132A56;
+}
+.prp-WelcomeRegistration-Role-Group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+.prp-WelcomeRegistration-Role-Group label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #132A56;
+}
+.prp-WelcomeRegistration-Role-Group label span {
+    color: #F44336;
+}
+.prp-WelcomeRegistration-Select-Wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.prp-WelcomeRegistration-Select-Wrapper select {
+    appearance: none;
+    width: 100%;
+    height: 48px;
+    padding: 0 48px 0 16px;
+    border: 1px solid #9AA8C0;
+    border-radius: 9px;
+    outline: none;
+    background-color: #FFFFFF;
+    color: #132A56;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.prp-WelcomeRegistration-Select-Wrapper select:focus {
+    border-color: #132A56;
+    box-shadow: 0 0 0 3px #132A5620;
+}
+.prp-WelcomeRegistration-Select-Arrow {
+    position: absolute;
+    top: 50%;
+    right: 17px;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-50%);
+    object-fit: contain;
+    pointer-events: none;
+}
+@media (max-width: 1200px) {
+    .prp-WelcomeRegistration-Left {
+        flex-basis: 45%;
+    }
+    .prp-WelcomeRegistration-Content {
+        padding: 0 28px;
+    }
+    .prp-WelcomeRegistration-Intro h1 {
+        font-size: 29px;
+    }
+    .prp-WelcomeRegistration-Illustration {
+        height: 270px;
+    }
+    .prp-WelcomeRegistration-Right {
+        padding: 160px 30px 50px;
+    }
+    .prp-WelcomeRegistration-Form-Header h2 {
+        font-size: 25px;
+    }
+}
+@media (max-width: 900px) {
+    .prp-WelcomeRegistration-Container {
+        flex-direction: column;
+    }
+    .prp-WelcomeRegistration-Left {
+        flex: none;
+        width: 100%;
+        min-height: auto;
+        padding: 40px 0 35px;
+    }
+    .prp-WelcomeRegistration-Content {
+        max-width: 650px;
+        padding: 0 28px;
+    }
+    .prp-WelcomeRegistration-Intro h1 {
+        max-width: 550px;
+        font-size: 30px;
+    }
+    .prp-WelcomeRegistration-Illustration {
+        height: 300px;
+        margin: 20px 0;
+    }
+    .prp-WelcomeRegistration-Features,
+    .prp-WelcomeRegistration-Testimonial {
+        max-width: 100%;
+    }
+    .prp-WelcomeRegistration-Right {
+        flex: none;
+        width: 100%;
+        min-height: 350px;
+        padding: 55px 28px 70px;
+        background-color: #FFFFFF;
+    }
+    .prp-WelcomeRegistration-Form {
+        max-width: 650px;
+    }
+}
+@media (max-width: 480px) {
+    .prp-WelcomeRegistration-Left {
+        padding: 30px 0;
+    }
+    .prp-WelcomeRegistration-Content {
+        padding: 0 20px;
+    }
+    .prp-WelcomeRegistration-Intro {
+        gap: 14px;
+    }
+    .prp-WelcomeRegistration-Intro h1 {
+        font-size: 25px;
+        line-height: 1.35;
+    }
+    .prp-WelcomeRegistration-Intro p {
+        font-size: 12px;
+        line-height: 21px;
+    }
+    .prp-WelcomeRegistration-Illustration {
+        height: 230px;
+        margin: 16px 0 20px;
+    }
+    .prp-WelcomeRegistration-Features {
+        gap: 14px;
+    }
+    .prp-WelcomeRegistration-Feature-Item {
+        gap: 10px;
+        padding: 12px;
+        border-radius: 10px;
+    }
+    .prp-WelcomeRegistration-Feature-Text h3 {
+        font-size: 12px;
+    }
+    .prp-WelcomeRegistration-Feature-Text p {
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .prp-WelcomeRegistration-Testimonial {
+        margin-top: 28px;
+        padding-top: 20px;
+    }
+    .prp-WelcomeRegistration-Testimonial-Author p {
+        font-size: 9px;
+    }
+    .prp-WelcomeRegistration-Right {
+        padding: 40px 20px 55px;
+    }
+    .prp-WelcomeRegistration-Form {
+        gap: 20px;
+    }
+    .prp-WelcomeRegistration-Form-Header h2 {
+        font-size: 23px;
+    }
+    .prp-WelcomeRegistration-Form-Header p {
+        font-size: 11px;
+    }
+    .prp-WelcomeRegistration-Select-Wrapper select {
+        height: 46px;
+        font-size: 12px;
+    }
+}
