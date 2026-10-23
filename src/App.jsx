@@ -4,6 +4,7 @@ import ForgotPassword from "./Components-ForgotPassword/ForgotPassword";
 import PlacementReset from "./Components-PlacementReset/PlacementReset";
 import ResetPassword from "./Components-ResetPassword/ResetPassword";
 import SuccessfulPage from "./Components-SuccessfulPage/SuccessfulPage";
+import WelcomeRegistrationScreen from "./Components-Registration/WelcomeRegistrationScreen";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
     path: "/PRP_Portal/Login",
     element: <CommonLoginScreen />,
   },
+  {
+  path: "/PRP_Portal/WelcomeRegistration",
+  element: <WelcomeRegistrationScreen />,
+},
   {
     path: "/PRP_Portal/ForgotPassword",
     element: <ForgotPassword />,
