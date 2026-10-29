@@ -1,3 +1,4 @@
+
 import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";
 import CommonLoginScreen from "./Components-Login/CommonLoginScreen";
 import ForgotPassword from "./Components-ForgotPassword/ForgotPassword";
@@ -5,20 +6,25 @@ import PlacementReset from "./Components-PlacementReset/PlacementReset";
 import ResetPassword from "./Components-ResetPassword/ResetPassword";
 import SuccessfulPage from "./Components-SuccessfulPage/SuccessfulPage";
 import WelcomeRegistrationScreen from "./Components-Registration/WelcomeRegistrationScreen";
+import LandingPage from "./Components-LandingPage/LandingPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Navigate to="/PRP_Portal/Login" replace />,
+    element: <LandingPage />,
+  },
+  {
+    path: "/PRP_Portal",
+    element: <LandingPage />,
   },
   {
     path: "/PRP_Portal/Login",
     element: <CommonLoginScreen />,
   },
   {
-  path: "/PRP_Portal/WelcomeRegistration",
-  element: <WelcomeRegistrationScreen />,
-},
+    path: "/PRP_Portal/WelcomeRegistration",
+    element: <WelcomeRegistrationScreen />,
+  },
   {
     path: "/PRP_Portal/ForgotPassword",
     element: <ForgotPassword />,
@@ -37,7 +43,7 @@ const router = createBrowserRouter([
   },
   {
     path: "*",
-    element: <Navigate to="/PRP_Portal/Login" replace />,
+    element: <Navigate to="/" replace />,
   },
 ]);
 

@@ -1,0 +1,172 @@
+.Prp-LandingPage-Scaler { position: relative; width: 100%; max-width: 1920px; margin: 0 auto; overflow: hidden; background: linear-gradient(270deg, #ffffff 40%, #566b94 93%); }
+.Prp-LandingPage-Stage { position: absolute; left: 0; top: 0; width: 1920px; height: 3041px; transform-origin: top left; background: linear-gradient(270deg, #ffffff 40%, #566b94 93%); }
+
+.Prp-LandingPage-NavBar { position: absolute; left: 0; top: 0; width: 1920px; height: 100px; border-bottom: 1px solid #176789; background: transparent; z-index: 10; }
+.Prp-LandingPage-NavBar-Logo { position: absolute; left: 20px; top: 20px; width: 300px; height: 60px; }
+.Prp-LandingPage-NavBar-LogoIconWrap { position: absolute; left: 0; top: 8px; width: 44px; height: 44px; border-radius: 12px; background: #132a56; box-shadow: 0 2px 4px -2px rgba(59, 130, 246, 0.2), 0 4px 6px -1px rgba(59, 130, 246, 0.2); display: flex; align-items: center; justify-content: center; }
+.Prp-LandingPage-NavBar-LogoIcon { width: 24px; height: 24px; object-fit: contain; }
+.Prp-LandingPage-NavBar-LogoTitle { position: absolute; left: 54px; top: 0; height: 60px; margin: 0; padding: 0 10px; display: flex; flex-direction: column; justify-content: center; font-family: 'Open Sans', sans-serif; font-size: 24px; font-weight: 600; letter-spacing: -0.0583em; line-height: 30px; color: #132a56; text-align: left; }
+.Prp-LandingPage-NavBar-Links { position: absolute; left: 432px; top: 35px; width: 1040px; height: 30px; }
+.Prp-LandingPage-NavBar-Link { position: absolute; top: 0; height: 30px; padding: 0 5px; display: flex; align-items: center; justify-content: center; font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 600; letter-spacing: -0.0875em; color: #132a56; text-decoration: none; white-space: nowrap; box-sizing: border-box; }
+.Prp-LandingPage-NavBar-Link-Home { left: 0; width: 60px; }
+.Prp-LandingPage-NavBar-Link-Features { left: 160px; width: 90px; }
+.Prp-LandingPage-NavBar-Link-Recruiters { left: 350px; width: 220px; }
+.Prp-LandingPage-NavBar-Link-Training { left: 670px; }
+.Prp-LandingPage-NavBar-Link-Success { left: 932px; }
+.Prp-LandingPage-NavBar-ActiveLine { position: absolute; left: 431px; top: 73px; width: 60px; height: 3px; object-fit: fill; }
+.Prp-LandingPage-NavBar-Actions { position: absolute; left: 1584px; top: 27px; display: flex; gap: 20px; align-items: center; }
+.Prp-LandingPage-NavBar-LoginButton { box-sizing: border-box; width: 135px; padding: 10px 28px; border: none; border-radius: 10px; background: #176789; color: #ffffff; font-family: 'Open Sans', sans-serif; font-size: 18px; font-weight: 600; cursor: pointer; }
+.Prp-LandingPage-NavBar-RegisterButton { box-sizing: border-box; width: 135px; height: 45px; padding: 10px 20px; border: none; border-radius: 10px; background: #132a56; color: #ffffff; font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 600; cursor: pointer; }
+
+.Prp-LandingPage-Hero-Section { position: absolute; left: 0; top: 150px; width: 1920px; height: 615px; }
+.Prp-LandingPage-Hero-Eyebrow { position: absolute; left: 160px; top: 115px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 26px; font-weight: 600; letter-spacing: -0.0538em; color: #132a56; }
+.Prp-LandingPage-Hero-Title { position: absolute; left: 160px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 48px; font-weight: 600; letter-spacing: -0.0292em; line-height: 50px; color: #132a56; }
+.Prp-LandingPage-Hero-Title-Line1 { top: 195px; }
+.Prp-LandingPage-Hero-Title-Line2 { top: 265px; }
+.Prp-LandingPage-Hero-Description { position: absolute; left: 160px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 26px; font-weight: 600; letter-spacing: -0.0538em; line-height: 30px; color: #333334; }
+.Prp-LandingPage-Hero-Description-Line1 { top: 365px; }
+.Prp-LandingPage-Hero-Description-Line2 { top: 405px; }
+.Prp-LandingPage-Hero-Button { position: absolute; top: 485px; width: 200px; height: 80px; box-sizing: border-box; border: none; border-radius: 15px; box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.25); font-family: 'Open Sans', sans-serif; font-size: 26px; font-weight: 600; letter-spacing: -0.0538em; cursor: pointer; }
+.Prp-LandingPage-Hero-Button-Primary { left: 150px; background: #132a56; color: #f8f8f9; }
+.Prp-LandingPage-Hero-Button-Secondary { left: 380px; background: #ffffff; color: #132a56; border: 1px solid #132a56; }
+.Prp-LandingPage-Hero-Image { position: absolute; left: 1070px; top: 58px; width: 700px; height: 500px; object-fit: contain; }
+
+.Prp-LandingPage-Features-Section { position: absolute; left: 0; top: 815px; width: 1920px; height: 630px; background: rgba(19, 42, 86, 0.2); }
+.Prp-LandingPage-Features-Eyebrow { position: absolute; left: 852px; top: 50px; width: 196px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 26px; font-weight: 600; letter-spacing: -0.0538em; text-align: center; color: #333334; }
+.Prp-LandingPage-Features-Title { position: absolute; left: 638px; top: 130px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 32px; font-weight: 600; letter-spacing: -0.0437em; text-align: center; color: #132a56; white-space: nowrap; }
+.Prp-LandingPage-Features-Grid { position: absolute; left: 90px; top: 230px; width: 1739px; height: 350px; }
+.Prp-LandingPage-Features-Card { position: absolute; top: 0; width: 300px; height: 350px; border: 1px solid #176789; border-radius: 20px; background: #ffffff; }
+.Prp-LandingPage-Features-Card:nth-child(1) { left: 0; }
+.Prp-LandingPage-Features-Card:nth-child(2) { left: 359px; }
+.Prp-LandingPage-Features-Card:nth-child(3) { left: 719px; }
+.Prp-LandingPage-Features-Card:nth-child(4) { left: 1079px; }
+.Prp-LandingPage-Features-Card:nth-child(5) { left: 1439px; }
+.Prp-LandingPage-Features-CardIcon { position: absolute; left: 100px; top: 30px; width: 100px; height: 100px; object-fit: contain; }
+.Prp-LandingPage-Features-CardTitle { position: absolute; left: 13px; top: 160px; width: 274px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 26px; font-weight: 400; letter-spacing: -0.0538em; text-align: center; color: #132a56; }
+.Prp-LandingPage-Features-CardDescription { position: absolute; left: 41px; top: 220px; width: 218px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 22px; font-weight: 400; letter-spacing: -0.0636em; line-height: 1.35; text-align: center; color: #333334; white-space: pre-line; }
+
+.Prp-LandingPage-Testimonials-Section { position: absolute; left: 0; top: 1495px; width: 1920px; height: 623px; background: transparent; }
+.Prp-LandingPage-Testimonials-Eyebrow { position: absolute; left: 850px; top: 50px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 26px; font-weight: 600; letter-spacing: -0.0538em; text-transform: uppercase; color: #333334; }
+.Prp-LandingPage-Testimonials-Title { position: absolute; left: 760px; top: 130px; width: 400px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 32px; font-weight: 600; letter-spacing: -0.0437em; text-align: center; color: #132a56; }
+.Prp-LandingPage-Testimonials-Grid { position: absolute; left: 90px; top: 230px; width: 1739px; height: 343px; }
+.Prp-LandingPage-Testimonials-Card { position: absolute; top: 0; width: 553px; height: 343px; border: 1px solid #c4c7cc; border-radius: 48px; background: #132a56; }
+.Prp-LandingPage-Testimonials-Card:nth-child(1) { left: 0; }
+.Prp-LandingPage-Testimonials-Card:nth-child(2) { left: 593px; }
+.Prp-LandingPage-Testimonials-Card:nth-child(3) { left: 1186px; }
+.Prp-LandingPage-Testimonials-QuoteIcon { position: absolute; top: 33px; right: 48px; width: 99px; height: 70px; object-fit: contain; opacity: 0.35; pointer-events: none; }
+.Prp-LandingPage-Testimonials-CardHeader { position: absolute; left: 49px; top: 49px; width: 455px; height: 96px; }
+.Prp-LandingPage-Testimonials-CardAvatar { position: absolute; left: 0; top: 0; width: 96px; height: 96px; object-fit: contain; flex-shrink: 0; }
+.Prp-LandingPage-Testimonials-CardMeta { position: absolute; left: 128px; top: 15px; width: 327px; }
+.Prp-LandingPage-Testimonials-CardStars { display: flex; align-items: center; gap: 4px; margin-bottom: 4px; }
+.Prp-LandingPage-Testimonials-CardStar { width: 20px; height: 19px; object-fit: contain; }
+.Prp-LandingPage-Testimonials-CardName { margin: 0; padding-top: 4px; font-family: 'Open Sans', sans-serif; font-size: 20px; font-weight: 600; color: #c4c7cc; }
+.Prp-LandingPage-Testimonials-CardRole { margin: 0; font-family: 'Open Sans', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.05em; color: #4d5a81; }
+.Prp-LandingPage-Testimonials-CardQuote { position: absolute; left: 49px; top: 177px; width: 455px; margin: 0; padding-right: 32px; box-sizing: border-box; font-family: 'Open Sans', sans-serif; font-size: 18px; font-style: italic; line-height: 1.45; color: #4d5a81; white-space: pre-line; }
+
+.Prp-LandingPage-Trusted-Section { position: absolute; left: 0; top: 2168px; width: 1920px; height: 340px; background: rgba(19, 42, 86, 0.6); }
+.Prp-LandingPage-Trusted-Eyebrow { position: absolute; left: 703px; top: 50px; width: 495px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 26px; font-weight: 600; letter-spacing: 0.0923em; text-transform: uppercase; text-align: center; color: #333334; }
+.Prp-LandingPage-Trusted-Title { position: absolute; left: 679px; top: 130px; width: 543px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 32px; font-weight: 700; letter-spacing: 0.075em; text-transform: uppercase; text-align: center; color: #132a56; }
+.Prp-LandingPage-Trusted-Logos { position: absolute; left: 117px; top: 230px; width: 1687px; display: flex; align-items: center; gap: 40px; padding: 0 20px; box-sizing: border-box; }
+.Prp-LandingPage-Trusted-Logo { width: 200px; height: 60px; object-fit: contain; border-radius: 10px; flex-shrink: 0; }
+
+.Prp-LandingPage-Footer { position: absolute; left: 0; top: 2558px; width: 1920px; height: 483px; background: rgba(0, 12, 45, 0.9); }
+.Prp-LandingPage-Footer-Columns { position: absolute; left: 120px; top: 58px; width: 1680px; display: flex; gap: 48px; padding: 0 40px 48px; box-sizing: border-box; border-bottom: 5px solid rgba(255, 255, 255, 0.1); }
+.Prp-LandingPage-Footer-Column { flex: 1; display: flex; flex-direction: column; gap: 16px; }
+.Prp-LandingPage-Footer-Column-Legal { padding-bottom: 45px; gap: 0; }
+.Prp-LandingPage-Footer-Heading { margin: 0 0 16px; font-family: 'Open Sans', sans-serif; font-size: 14px; font-weight: 700; line-height: 20px; letter-spacing: 0.1em; text-transform: uppercase; color: #ffffff; }
+.Prp-LandingPage-Footer-Link { font-family: 'Open Sans', sans-serif; font-size: 14px; font-weight: 600; line-height: 20px; color: rgba(255, 255, 255, 0.6); text-decoration: none; padding: 2.5px 0 1.5px; }
+.Prp-LandingPage-Footer-Legal { margin: 8px 0 0; font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; color: rgba(255, 255, 255, 0.6); white-space: pre-line; }
+.Prp-LandingPage-Footer-Bottom { position: absolute; left: 160px; top: 350px; width: 1680px; height: 16px; padding: 0 40px; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; }
+.Prp-LandingPage-Footer-Copy { margin: 0; font-family: 'Open Sans', sans-serif; font-size: 12px; font-weight: 600; line-height: 16px; letter-spacing: 0.05em; color: rgba(255, 255, 255, 0.4); }
+.Prp-LandingPage-Footer-Socials { display: flex; gap: 32px; align-items: center; }
+.Prp-LandingPage-Footer-Socials img { width: 24px; height: 24px; object-fit: contain; }
+
+@media (min-width: 1200px) {
+  .Prp-LandingPage-NavBar-Panel { display: contents; }
+}
+.Prp-LandingPage-NavBar-MenuToggle { display: none; }
+
+.Prp-LandingPage-Scaler-Fluid { height: auto !important; max-width: 100%; overflow: visible; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Stage { position: relative; width: 100% !important; height: auto !important; transform: none !important; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-NavBar { position: sticky; top: 0; z-index: 100; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; width: 100%; height: auto; min-height: 72px; padding: 12px 20px; box-sizing: border-box; background: #ffffff; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-NavBar-Logo { position: relative; left: auto; top: auto; display: flex; align-items: center; gap: 10px; width: auto; max-width: calc(100% - 56px); height: auto; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-NavBar-LogoIconWrap { position: relative; left: auto; top: auto; flex-shrink: 0; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-NavBar-LogoTitle { position: relative; left: auto; top: auto; height: auto; font-size: clamp(14px, 3.5vw, 20px); line-height: 1.25; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-NavBar-MenuToggle { display: flex; flex-direction: column; justify-content: center; gap: 5px; width: 44px; height: 44px; padding: 10px; border: 1px solid #176789; border-radius: 10px; background: #ffffff; cursor: pointer; flex-shrink: 0; position: relative; z-index: 101; }
+.Prp-LandingPage-NavBar-MenuBar { display: block; width: 100%; height: 3px; border-radius: 2px; background: #132a56; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-NavBar-Panel { display: none; width: 100%; flex-basis: 100%; flex-direction: column; gap: 16px; padding: 8px 0 12px; border-top: 1px solid rgba(23, 103, 137, 0.25); }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-NavBar-Panel-Open { display: flex; position: relative; z-index: 100; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-NavBar-Links { position: static; width: 100%; height: auto; display: flex; flex-direction: column; gap: 4px; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-NavBar-Link { position: static; left: auto !important; width: auto !important; justify-content: flex-start; padding: 12px 8px; font-size: 16px; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-NavBar-ActiveLine { display: none; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-NavBar-Actions { position: static; left: auto; top: auto; width: 100%; flex-direction: column; gap: 12px; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-NavBar-LoginButton,
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-NavBar-RegisterButton { width: 100%; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Hero-Section { position: relative; top: auto; left: auto; width: 100%; height: auto; padding: 32px 20px 40px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; text-align: center; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Hero-Eyebrow,
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Hero-Title,
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Hero-Description { position: static; left: auto; top: auto; width: 100%; max-width: 640px; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Hero-Eyebrow { margin-bottom: 12px; font-size: clamp(16px, 4vw, 22px); }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Hero-Title { font-size: clamp(28px, 7vw, 40px); line-height: 1.15; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Hero-Title-Line2 { margin-bottom: 16px; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Hero-Description { font-size: clamp(15px, 3.8vw, 20px); line-height: 1.45; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Hero-Description-Line2 { margin-bottom: 24px; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Hero-Button { position: static; top: auto; left: auto; width: 100%; max-width: 280px; height: auto; min-height: 52px; padding: 14px 24px; font-size: clamp(16px, 4vw, 20px); margin-bottom: 12px; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Hero-Image { position: static; top: auto; left: auto; width: 100%; max-width: 520px; height: auto; margin-top: 24px; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Features-Section { position: relative; top: auto; width: 100%; height: auto; padding: 48px 20px 56px; box-sizing: border-box; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Features-Eyebrow,
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Features-Title { position: static; left: auto; top: auto; width: 100%; text-align: center; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Features-Eyebrow { margin-bottom: 12px; font-size: clamp(16px, 4vw, 22px); }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Features-Title { margin-bottom: 28px; font-size: clamp(22px, 5vw, 28px); white-space: normal; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Features-Grid { position: static; width: 100%; height: auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Features-Card { position: relative; left: auto !important; top: auto; width: 100%; height: auto; min-height: 300px; padding-bottom: 24px; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Features-CardIcon { position: relative; left: auto; top: auto; margin: 24px auto 16px; display: block; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Features-CardTitle,
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Features-CardDescription { position: static; left: auto; top: auto; width: auto; margin-left: 16px; margin-right: 16px; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Testimonials-Section { position: relative; top: auto; width: 100%; height: auto; padding: 48px 20px 56px; box-sizing: border-box; background: #ffffff; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Testimonials-Eyebrow,
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Testimonials-Title { position: static; left: auto; top: auto; width: 100%; text-align: center; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Testimonials-Eyebrow { margin-bottom: 12px; font-size: clamp(16px, 4vw, 22px); }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Testimonials-Title { margin-bottom: 28px; font-size: clamp(22px, 5vw, 28px); }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Testimonials-Grid { position: static; width: 100%; height: auto; display: flex; flex-direction: column; gap: 20px; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Testimonials-Card { position: relative; left: auto !important; top: auto; width: 100%; max-width: 553px; margin: 0 auto; height: auto; min-height: 320px; padding-bottom: 32px; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Testimonials-CardHeader { position: relative; left: auto; top: auto; display: flex; align-items: center; gap: 16px; width: auto; height: auto; margin: 32px 24px 16px; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Testimonials-CardAvatar { position: relative; left: auto; top: auto; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Testimonials-CardMeta { position: relative; left: auto; top: auto; width: auto; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Testimonials-CardQuote { position: relative; left: auto; top: auto; width: auto; margin: 0 24px; font-size: clamp(15px, 3.6vw, 18px); }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Trusted-Section { position: relative; top: auto; width: 100%; height: auto; padding: 48px 20px 56px; box-sizing: border-box; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Trusted-Eyebrow,
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Trusted-Title { position: static; left: auto; top: auto; width: 100%; text-align: center; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Trusted-Eyebrow { margin-bottom: 12px; font-size: clamp(14px, 3.5vw, 20px); }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Trusted-Title { margin-bottom: 28px; font-size: clamp(20px, 5vw, 28px); }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Trusted-Logos { position: static; width: 100%; height: auto; flex-wrap: wrap; justify-content: center; gap: 16px 24px; padding: 0; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Trusted-Logo { width: min(140px, 40vw); height: auto; max-height: 48px; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Footer { position: relative; top: auto; width: 100%; height: auto; padding: 40px 20px 32px; box-sizing: border-box; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Footer-Columns { position: static; width: 100%; height: auto; flex-direction: column; gap: 28px; padding: 0 0 32px; }
+.Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Footer-Bottom { position: static; width: 100%; height: auto; flex-direction: column; gap: 20px; padding: 24px 0 0; align-items: flex-start; }
+
+@media (max-width: 767px) {
+  .Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Features-Grid { grid-template-columns: 1fr; }
+  .Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-NavBar-LogoTitle br { display: none; }
+  .Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Hero-Button { max-width: 100%; }
+  .Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Testimonials-CardHeader { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Testimonials-CardMeta { width: 100%; }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-NavBar-Panel-Open { flex-direction: row; flex-wrap: wrap; align-items: center; }
+  .Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-NavBar-Links { flex: 1 1 100%; flex-direction: row; flex-wrap: wrap; gap: 8px 16px; }
+  .Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-NavBar-Actions { flex: 1 1 100%; flex-direction: row; }
+  .Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-NavBar-LoginButton,
+  .Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-NavBar-RegisterButton { width: auto; flex: 1; }
+  .Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Hero-Section { padding: 40px 32px 48px; }
+  .Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Hero-Button { width: calc(50% - 8px); max-width: none; display: inline-flex; align-items: center; justify-content: center; }
+  .Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Hero-Section { display: grid; grid-template-columns: 1fr 1fr; align-items: center; text-align: left; column-gap: 24px; }
+  .Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Hero-Eyebrow,
+  .Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Hero-Title,
+  .Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Hero-Description,
+  .Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Hero-Button { grid-column: 1; }
+  .Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Hero-Image { grid-column: 2; grid-row: 1 / span 6; margin-top: 0; align-self: center; }
+  .Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Testimonials-Grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+  .Prp-LandingPage-Scaler-Fluid .Prp-LandingPage-Testimonials-Card:last-child { grid-column: 1 / -1; max-width: 553px; }
+}

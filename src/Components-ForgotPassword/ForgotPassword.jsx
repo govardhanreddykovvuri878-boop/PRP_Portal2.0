@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./ForgotPassword.css";
@@ -31,6 +32,7 @@ const ForgotPassword = () => {
       setError("Please enter your email address.");
       return;
     }
+
     if (!EMAIL_REGEX.test(value)) {
       setError("Please enter a valid email address.");
       return;
@@ -38,14 +40,31 @@ const ForgotPassword = () => {
 
     setError("");
     setSuccess(true);
-    navigate("/PRP_Portal/ResetLinkSent", { state: { email: value } });
+    navigate("/PRP_Portal/ResetLinkSent", {
+      state: { email: value },
+    });
   };
 
   return (
     <div className="ForgotPassword-page">
       <section className="ForgotPassword-leftSection">
         <header className="ForgotPassword-header">
-          <img className="ForgotPassword-logo" src={Logo} alt="" />
+          <img
+            className="ForgotPassword-logo"
+            src={Logo}
+            alt="EduHire Logo"
+            role="button"
+            tabIndex={0}
+            onClick={() => navigate("/")}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                navigate("/");
+              }
+            }}
+            style={{ cursor: "pointer" }}
+          />
+
           <div className="ForgotPassword-brandText">
             <span className="ForgotPassword-brandTitle">
               Placement &amp; Recruitment Platform
@@ -90,7 +109,11 @@ const ForgotPassword = () => {
       </section>
 
       <section className="ForgotPassword-formSection">
-        <form className="ForgotPassword-form" onSubmit={handleSubmit} noValidate>
+        <form
+          className="ForgotPassword-form"
+          onSubmit={handleSubmit}
+          noValidate
+        >
           <h2 className="ForgotPassword-formHeading">Forgot Password ?</h2>
           <p className="ForgotPassword-formDescription">
             Enter your registered ID or email to receive a password reset link.
@@ -100,6 +123,7 @@ const ForgotPassword = () => {
             <label className="ForgotPassword-emailLabel" htmlFor="email">
               Email Address
             </label>
+
             <div className="ForgotPassword-inputWrapper">
               <img className="ForgotPassword-emailIcon" src={EmailIcon} alt="" />
               <input
@@ -112,11 +136,13 @@ const ForgotPassword = () => {
                 aria-invalid={Boolean(error)}
               />
             </div>
+
             {error && (
               <p className="ForgotPassword-error" role="alert">
                 {error}
               </p>
             )}
+
             {success && (
               <p className="ForgotPassword-success" role="status">
                 Reset link sent! Please check your email.
@@ -130,9 +156,13 @@ const ForgotPassword = () => {
           </button>
 
           <div className="ForgotPassword-divider">
-            <a className="ForgotPassword-backLogin" href="/PRP_Portal/Login">
+            <button
+              className="ForgotPassword-backLogin"
+              type="button"
+              onClick={() => navigate("/PRP_Portal/Login")}
+            >
               BACK TO LOGIN
-            </a>
+            </button>
           </div>
 
           <button className="ForgotPassword-googleButton" type="button">
@@ -142,9 +172,13 @@ const ForgotPassword = () => {
 
           <p className="ForgotPassword-accountText">
             Don't have an account?{" "}
-            <a className="ForgotPassword-createAccount" href="#">
+            <button
+              className="ForgotPassword-createAccount"
+              type="button"
+              onClick={() => navigate("/PRP_Portal/WelcomeRegistration")}
+            >
               Create Account
-            </a>
+            </button>
           </p>
 
           <nav className="ForgotPassword-footer" aria-label="Footer">

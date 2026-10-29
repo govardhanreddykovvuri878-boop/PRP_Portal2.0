@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "./PlacementReset.css";
@@ -8,7 +9,6 @@ import ResetLink from "../assets/PlacementResetAssets/ResetLink.png";
 import EmailLink from "../assets/PlacementResetAssets/EmailLink.png";
 import Arrow from "../assets/PlacementResetAssets/Arrow.png";
 import ResendLink from "../assets/PlacementResetAssets/ResendLink.png";
-
 
 const resendWaitSeconds = 30;
 
@@ -43,12 +43,28 @@ function PlacementReset() {
     setSecondsLeft(resendWaitSeconds);
   };
 
+  const handleLogoClick = () => {
+    navigate("/");
+  };
+
   return (
     <main className="placement-reset-page">
-     
       <section className="placement-reset-left">
         <div className="placement-reset-brand">
-          <div className="placement-reset-brand-logo">
+          <div
+            className="placement-reset-brand-logo"
+            onClick={handleLogoClick}
+            role="button"
+            tabIndex={0}
+            aria-label="Go to Landing Page"
+            style={{ cursor: "pointer" }}
+            onKeyDown={(event) => {
+              if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                handleLogoClick();
+              }
+            }}
+          >
             <img src={Placement} alt="Placement platform logo" />
           </div>
 
@@ -66,7 +82,6 @@ function PlacementReset() {
 
         <div className="placement-reset-heading">
           <h1>Check Your Inbox</h1>
-
           <p>
             We've sent a password reset link to your registered email address.
             <br />
@@ -86,13 +101,8 @@ function PlacementReset() {
 
         <div className="placement-reset-quote">
           <div className="placement-reset-quote-icon">
-            <img
-              src={UnifiedPlatform}
-              alt=""
-              aria-hidden="true"
-            />
+            <img src={UnifiedPlatform} alt="" aria-hidden="true" />
           </div>
-
           <p>
             "A unified platform that simplifies training, placements,
             and recruitment management."
@@ -156,22 +166,14 @@ function PlacementReset() {
               disabled={secondsLeft > 0}
               aria-disabled={secondsLeft > 0}
             >
-              <img
-                src={ResendLink}
-                alt=""
-                aria-hidden="true"
-              />
-
+              <img src={ResendLink} alt="" aria-hidden="true" />
               <span>Resend Reset Link</span>
             </button>
 
             <span className="placement-reset-divider" aria-hidden="true" />
           </div>
 
-          <p
-            className="placement-reset-timer"
-            aria-live="polite"
-          >
+          <p className="placement-reset-timer" aria-live="polite">
             {secondsLeft > 0
               ? `You can request a new link in ${secondsLeft} seconds.`
               : "You can request a new link now."}
@@ -179,13 +181,9 @@ function PlacementReset() {
 
           <footer className="placement-reset-footer">
             <button type="button">Help</button>
-
             <span className="placement-reset-footer-dot" aria-hidden="true" />
-
             <button type="button">Privacy</button>
-
             <span className="placement-reset-footer-dot" aria-hidden="true" />
-
             <button type="button">Terms</button>
           </footer>
         </div>

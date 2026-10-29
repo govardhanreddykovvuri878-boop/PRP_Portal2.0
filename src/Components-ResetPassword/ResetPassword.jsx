@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./ResetPassword.css";
@@ -21,23 +22,48 @@ function ResetPassword() {
 
   const getPasswordStrength = () => {
     if (password.length === 0) {
-      return { text: "Weak", width: "0%", className: "ResetPassword-Strength-Weak" };
+      return {
+        text: "Weak",
+        width: "0%",
+        className: "ResetPassword-Strength-Weak",
+      };
     }
+
     let score = 0;
     if (password.length >= 8) score++;
     if (/[A-Z]/.test(password)) score++;
     if (/[0-9]/.test(password)) score++;
     if (/[^A-Za-z0-9]/.test(password)) score++;
+
     if (score <= 1) {
-      return { text: "Weak", width: "25%", className: "ResetPassword-Strength-Weak" };
+      return {
+        text: "Weak",
+        width: "25%",
+        className: "ResetPassword-Strength-Weak",
+      };
     }
+
     if (score === 2) {
-      return { text: "Medium", width: "50%", className: "ResetPassword-Strength-Medium" };
+      return {
+        text: "Medium",
+        width: "50%",
+        className: "ResetPassword-Strength-Medium",
+      };
     }
+
     if (score === 3) {
-      return { text: "Good", width: "75%", className: "ResetPassword-Strength-Good" };
+      return {
+        text: "Good",
+        width: "75%",
+        className: "ResetPassword-Strength-Good",
+      };
     }
-    return { text: "Strong", width: "100%", className: "ResetPassword-Strength-Strong" };
+
+    return {
+      text: "Strong",
+      width: "100%",
+      className: "ResetPassword-Strength-Strong",
+    };
   };
 
   const strength = getPasswordStrength();
@@ -82,36 +108,73 @@ function ResetPassword() {
     }
   };
 
+  const handleLogoClick = () => {
+    navigate("/");
+  };
+
   return (
     <div className="ResetPassword-Container">
       <section className="ResetPassword-Left-Section">
         <div className="ResetPassword-Brand">
-          <img src={placementLogo} alt="Placement and Recruitment" className="ResetPassword-Placement-Logo" />
+          <img
+            src={placementLogo}
+            alt="Placement and Recruitment"
+            className="ResetPassword-Placement-Logo"
+            onClick={handleLogoClick}
+            role="button"
+            tabIndex={0}
+            aria-label="Go to Landing Page"
+            style={{ cursor: "pointer" }}
+            onKeyDown={(event) => {
+              if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                handleLogoClick();
+              }
+            }}
+          />
+
           <div className="ResetPassword-Brand-Text">
             <h3>Placement & Recruitment Platform</h3>
             <p>Connect • Discover • Succeed</p>
           </div>
         </div>
+
         <div className="ResetPassword-Left-Content">
           <p className="ResetPassword-Small-Title">RESET YOUR PASSWORD</p>
+
           <h1>
             Reset your Password?
             <br />
             Get Back on Track.
           </h1>
+
           <p className="ResetPassword-Description">
-            Enter your registered email address and we'll send you a link to reset your password.
+            Enter your registered email address and we'll send you a link to
+            reset your password.
           </p>
+
           <div className="ResetPassword-Illustration-Container">
-            <img src={resetPasswordImage} alt="Reset Password" className="ResetPassword-Illustration" />
+            <img
+              src={resetPasswordImage}
+              alt="Reset Password"
+              className="ResetPassword-Illustration"
+            />
           </div>
+
           <div className="ResetPassword-Quote-Box">
             <div className="ResetPassword-Quote-Icon">
               <img src={shieldIcon} alt="Security" />
             </div>
+
             <div className="ResetPassword-Quote-Content">
-              <strong>“A unified platform that simplifies training, placements, and recruitment management.”</strong>
-              <p>Dr. Elena Vance — Dean of Experiential Education, Northeastern Consortium</p>
+              <strong>
+                “A unified platform that simplifies training, placements, and
+                recruitment management.”
+              </strong>
+              <p>
+                Dr. Elena Vance — Dean of Experiential Education, Northeastern
+                Consortium
+              </p>
             </div>
           </div>
         </div>
@@ -121,19 +184,44 @@ function ResetPassword() {
         <div className="ResetPassword-Back-Login">
           <img
             src={backArrow}
-             alt="Back"
-             className="ResetPassword-Back-Arrow"
+            alt="Back"
+            className="ResetPassword-Back-Arrow"
           />
-          <a href="/PRP_Portal/Login">Back to Login</a>
+
+          <button
+            type="button"
+            onClick={() => navigate("/PRP_Portal/Login")}
+            style={{
+              background: "none",
+              border: "none",
+              padding: 0,
+              cursor: "pointer",
+              color: "inherit",
+              font: "inherit",
+            }}
+          >
+            Back to Login
+          </button>
         </div>
+
         <div className="ResetPassword-Form-Container">
           <h2>Reset Password</h2>
-          <p className="ResetPassword-Form-Subtitle">Choose a strong password to keep ur account secure</p>
+
+          <p className="ResetPassword-Form-Subtitle">
+            Choose a strong password to keep ur account secure
+          </p>
+
           <form>
             <div className="ResetPassword-Form-Group">
               <label htmlFor="password">New Password</label>
+
               <div className="ResetPassword-Input-Wrapper">
-                <img src={lockIcon} alt="Lock" className="ResetPassword-Lock-Icon" />
+                <img
+                  src={lockIcon}
+                  alt="Lock"
+                  className="ResetPassword-Lock-Icon"
+                />
+
                 <input
                   id="password"
                   type={showPassword ? "text" : "password"}
@@ -144,10 +232,16 @@ function ResetPassword() {
                     setPasswordError("");
                   }}
                 />
-                <button type="button" className="ResetPassword-Eye-Button" onClick={() => setShowPassword(!showPassword)}>
+
+                <button
+                  type="button"
+                  className="ResetPassword-Eye-Button"
+                  onClick={() => setShowPassword(!showPassword)}
+                >
                   <img src={eyeIcon} alt="Show Password" />
                 </button>
               </div>
+
               <div className="ResetPassword-Strength-Row">
                 <div className="ResetPassword-Strength-Bar">
                   <div
@@ -155,18 +249,30 @@ function ResetPassword() {
                     style={{ width: strength.width }}
                   ></div>
                 </div>
+
                 <p className="ResetPassword-Strength-Text">
                   Password strength:
-                  <span className={strength.className}> {strength.text}</span>
+                  <span className={strength.className}>
+                    {" "}{strength.text}
+                  </span>
                 </p>
               </div>
-              {passwordError && <p className="ResetPassword-Input-Error">{passwordError}</p>}
+
+              {passwordError && (
+                <p className="ResetPassword-Input-Error">{passwordError}</p>
+              )}
             </div>
 
             <div className="ResetPassword-Form-Group ResetPassword-Confirm-Group">
               <label htmlFor="confirmPassword">Confirm Password</label>
+
               <div className="ResetPassword-Input-Wrapper">
-                <img src={lockIcon} alt="Lock" className="ResetPassword-Lock-Icon" />
+                <img
+                  src={lockIcon}
+                  alt="Lock"
+                  className="ResetPassword-Lock-Icon"
+                />
+
                 <input
                   id="confirmPassword"
                   type={showConfirmPassword ? "text" : "password"}
@@ -177,11 +283,23 @@ function ResetPassword() {
                     setConfirmPasswordError("");
                   }}
                 />
-                <button type="button" className="ResetPassword-Eye-Button" onClick={() => setShowConfirmPassword(!showConfirmPassword)}>
+
+                <button
+                  type="button"
+                  className="ResetPassword-Eye-Button"
+                  onClick={() =>
+                    setShowConfirmPassword(!showConfirmPassword)
+                  }
+                >
                   <img src={eyeIcon} alt="Show Password" />
                 </button>
               </div>
-              {confirmPasswordError && <p className="ResetPassword-Input-Error">{confirmPasswordError}</p>}
+
+              {confirmPasswordError && (
+                <p className="ResetPassword-Input-Error">
+                  {confirmPasswordError}
+                </p>
+              )}
             </div>
 
             <div className="ResetPassword-Signed-In">
@@ -189,7 +307,11 @@ function ResetPassword() {
               <label htmlFor="signedIn">Keep me signed in</label>
             </div>
 
-            <button type="button" className="ResetPassword-Reset-Btn" onClick={handleResetPassword}>
+            <button
+              type="button"
+              className="ResetPassword-Reset-Btn"
+              onClick={handleResetPassword}
+            >
               <span>Reset Password</span>
               <img
                 src={rightArrow}
@@ -205,21 +327,31 @@ function ResetPassword() {
             </div>
 
             <button type="button" className="ResetPassword-Google-Btn">
-              <img src={googleIcon} alt="Google" className="ResetPassword-Google-Icon" />
+              <img
+                src={googleIcon}
+                alt="Google"
+                className="ResetPassword-Google-Icon"
+              />
               <span>Google</span>
             </button>
 
             <p className="ResetPassword-Create-Account">
               Don't have an account?
-              <a href="/register"> Create Account</a>
+              <a
+                href="/PRP_Portal/WelcomeRegistration"
+                onClick={(event) => {
+                  event.preventDefault();
+                  navigate("/PRP_Portal/WelcomeRegistration");
+                }}
+              >
+                {" "}Create Account
+              </a>
             </p>
           </form>
 
           <div className="ResetPassword-Footer-Links">
             <a href="/">Help</a>
-            {/* <span>•</span> */}
             <a href="/">Privacy</a>
-            {/* <span>•</span> */}
             <a href="/">Terms</a>
           </div>
         </div>
