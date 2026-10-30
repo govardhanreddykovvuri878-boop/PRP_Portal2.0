@@ -1,174 +1,198 @@
-.Prp-Lp-Wrapper { position: relative; width: 100%; max-width: 1920px; aspect-ratio: 1920 / 3041; margin: 0 auto; overflow: hidden; container-type: inline-size; background: linear-gradient(270deg, #ffffff 40%, #566b94 93%); }
-.Prp-Lp-Stage { position: absolute; left: 0; top: 0; width: 1920px; height: 3041px; zoom: min(1, calc(100cqi / 1920px)); background: linear-gradient(270deg, #ffffff 40%, #566b94 93%); }
+.Prp-LandingPage-Wrapper { position: relative; width: 100%; max-width: 1920px; aspect-ratio: 1920 / 3041; margin: 0 auto; overflow: hidden; container-type: inline-size; background: linear-gradient(270deg, #ffffff 40%, #566b94 93%); }
+.Prp-LandingPage-Stage { position: absolute; left: 0; top: 0; width: 1920px; height: 3041px; zoom: min(1, calc(100cqi / 1920px)); background: linear-gradient(270deg, #ffffff 40%, #566b94 93%); }
 
-.Prp-Lp-Topbar { position: absolute; left: 0; top: 0; width: 1920px; height: 100px; border-bottom: 1px solid #176789; background: transparent; z-index: 10; }
-.Prp-Lp-Brand { position: absolute; left: 20px; top: 20px; width: 300px; height: 60px; }
-.Prp-Lp-Brand-Mark { position: absolute; left: 0; top: 8px; width: 44px; height: 44px; border-radius: 12px; background: #132a56; box-shadow: 0 2px 4px -2px rgba(59, 130, 246, 0.2), 0 4px 6px -1px rgba(59, 130, 246, 0.2); display: flex; align-items: center; justify-content: center; }
-.Prp-Lp-Brand-Icon { width: 24px; height: 24px; object-fit: contain; }
-.Prp-Lp-Brand-Name { position: absolute; left: 54px; top: 0; height: 60px; margin: 0; padding: 0 10px; display: flex; flex-direction: column; justify-content: center; font-family: 'Open Sans', sans-serif; font-size: 24px; font-weight: 600; letter-spacing: -0.0583em; line-height: 30px; color: #132a56; text-align: left; }
-.Prp-Lp-Topbar-NavLinks { position: absolute; left: 432px; top: 35px; width: 1040px; height: 30px; }
-.Prp-Lp-Topbar-NavItem { position: absolute; top: 0; height: 30px; padding: 0 5px; display: flex; align-items: center; justify-content: center; font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 600; letter-spacing: -0.0875em; color: #132a56; text-decoration: none; white-space: nowrap; box-sizing: border-box; }
-.Prp-Lp-Topbar-Home { left: 0; width: 60px; }
-.Prp-Lp-Topbar-Features { left: 160px; width: 90px; }
-.Prp-Lp-Topbar-Recruiters { left: 350px; width: 220px; }
-.Prp-Lp-Topbar-Training { left: 670px; }
-.Prp-Lp-Topbar-Stories { left: 932px; }
-.Prp-Lp-Topbar-Marker { position: absolute; left: 431px; top: 73px; width: 60px; height: 3px; object-fit: fill; }
-.Prp-Lp-Topbar-Actions { position: absolute; left: 1584px; top: 27px; display: flex; gap: 20px; align-items: center; }
-.Prp-Lp-Topbar-Login { box-sizing: border-box; width: 135px; padding: 10px 28px; border: none; border-radius: 10px; background: #176789; color: #ffffff; font-family: 'Open Sans', sans-serif; font-size: 18px; font-weight: 600; cursor: pointer; }
-.Prp-Lp-Topbar-Register { box-sizing: border-box; width: 135px; height: 45px; padding: 10px 20px; border: none; border-radius: 10px; background: #132a56; color: #ffffff; font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 600; cursor: pointer; }
+.Prp-LandingPage-Header { position: absolute; left: 0; top: 0; width: 1920px; height: 100px; border-bottom: 1px solid #176789; background: transparent; z-index: 10; }
+.Prp-LandingPage-Brand { position: absolute; left: 20px; top: 20px; width: 300px; height: 60px; }
+.Prp-LandingPage-BrandMark { position: absolute; left: 0; top: 8px; width: 44px; height: 44px; border-radius: 12px; background: #132a56; box-shadow: 0 2px 4px -2px rgba(59, 130, 246, 0.2), 0 4px 6px -1px rgba(59, 130, 246, 0.2); display: flex; align-items: center; justify-content: center; }
+.Prp-LandingPage-BrandIcon { width: 24px; height: 24px; object-fit: contain; }
+.Prp-LandingPage-BrandName { position: absolute; left: 54px; top: 0; height: 60px; margin: 0; padding: 0 10px; display: flex; flex-direction: column; justify-content: center; font-family: 'Open Sans', sans-serif; font-size: 24px; font-weight: 600; letter-spacing: -0.0583em; line-height: 30px; color: #132a56; text-align: left; }
+.Prp-LandingPage-Nav-Links { position: absolute; left: 432px; top: 35px; width: 1040px; height: 30px; }
+.Prp-LandingPage-Nav-Home { position: absolute; top: 0; height: 30px; padding: 0 5px; display: flex; align-items: center; justify-content: center; font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 600; letter-spacing: -0.0875em; color: #132a56; text-decoration: none; white-space: nowrap; box-sizing: border-box; }
+.Prp-LandingPage-Nav-Features { position: absolute; top: 0; height: 30px; padding: 0 5px; display: flex; align-items: center; justify-content: center; font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 600; letter-spacing: -0.0875em; color: #132a56; text-decoration: none; white-space: nowrap; box-sizing: border-box; }
+.Prp-LandingPage-Nav-Recruiters { position: absolute; top: 0; height: 30px; padding: 0 5px; display: flex; align-items: center; justify-content: center; font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 600; letter-spacing: -0.0875em; color: #132a56; text-decoration: none; white-space: nowrap; box-sizing: border-box; }
+.Prp-LandingPage-Nav-Training { position: absolute; top: 0; height: 30px; padding: 0 5px; display: flex; align-items: center; justify-content: center; font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 600; letter-spacing: -0.0875em; color: #132a56; text-decoration: none; white-space: nowrap; box-sizing: border-box; }
+.Prp-LandingPage-Nav-Stories { position: absolute; top: 0; height: 30px; padding: 0 5px; display: flex; align-items: center; justify-content: center; font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 600; letter-spacing: -0.0875em; color: #132a56; text-decoration: none; white-space: nowrap; box-sizing: border-box; }
+.Prp-LandingPage-Nav-Home { left: 0; width: 60px; }
+.Prp-LandingPage-Nav-Features { left: 160px; width: 90px; }
+.Prp-LandingPage-Nav-Recruiters { left: 350px; width: 220px; }
+.Prp-LandingPage-Nav-Training { left: 670px; }
+.Prp-LandingPage-Nav-Stories { left: 932px; }
+.Prp-LandingPage-NavIndicator { position: absolute; left: 431px; top: 73px; width: 60px; height: 3px; object-fit: fill; }
+.Prp-LandingPage-Header-Actions { position: absolute; left: 1584px; top: 27px; display: flex; gap: 20px; align-items: center; }
+.Prp-LandingPage-Btn-Login { box-sizing: border-box; width: 135px; padding: 10px 28px; border: none; border-radius: 10px; background: #176789; color: #ffffff; font-family: 'Open Sans', sans-serif; font-size: 18px; font-weight: 600; cursor: pointer; }
+.Prp-LandingPage-Btn-Register { box-sizing: border-box; width: 135px; height: 45px; padding: 10px 20px; border: none; border-radius: 10px; background: #132a56; color: #ffffff; font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 600; cursor: pointer; }
 
-.Prp-Lp-Welcome { position: absolute; left: 0; top: 150px; width: 1920px; height: 615px; }
-.Prp-Lp-Welcome-Label { position: absolute; left: 160px; top: 115px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 26px; font-weight: 600; letter-spacing: -0.0538em; color: #132a56; }
-.Prp-Lp-Welcome-Headline { position: absolute; left: 160px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 48px; font-weight: 600; letter-spacing: -0.0292em; line-height: 50px; color: #132a56; }
-.Prp-Lp-Welcome-HeadlineFirst { top: 195px; }
-.Prp-Lp-Welcome-HeadlineSecond { top: 265px; }
-.Prp-Lp-Welcome-Subtext { position: absolute; left: 160px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 26px; font-weight: 600; letter-spacing: -0.0538em; line-height: 30px; color: #333334; }
-.Prp-Lp-Welcome-SubtextFirst { top: 365px; }
-.Prp-Lp-Welcome-SubtextSecond { top: 405px; }
-.Prp-Lp-Welcome-Actions { position: absolute; top: 485px; width: 200px; height: 80px; box-sizing: border-box; border: none; border-radius: 15px; box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.25); font-family: 'Open Sans', sans-serif; font-size: 26px; font-weight: 600; letter-spacing: -0.0538em; cursor: pointer; }
-.Prp-Lp-Welcome-CTA { left: 150px; background: #132a56; color: #f8f8f9; }
-.Prp-Lp-Welcome-AltCTA { left: 380px; background: #ffffff; color: #132a56; border: 1px solid #132a56; }
-.Prp-Lp-Welcome-HeroArt { position: absolute; left: 1070px; top: 58px; width: 700px; height: 500px; object-fit: contain; }
+.Prp-LandingPage-Hero { position: absolute; left: 0; top: 150px; width: 1920px; height: 615px; }
+.Prp-LandingPage-Hero-Label { position: absolute; left: 160px; top: 115px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 26px; font-weight: 600; letter-spacing: -0.0538em; color: #132a56; }
+.Prp-LandingPage-Hero-Title1 { position: absolute; left: 160px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 48px; font-weight: 600; letter-spacing: -0.0292em; line-height: 50px; color: #132a56; }
+.Prp-LandingPage-Hero-Title2 { position: absolute; left: 160px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 48px; font-weight: 600; letter-spacing: -0.0292em; line-height: 50px; color: #132a56; }
+.Prp-LandingPage-Hero-Title1 { top: 195px; }
+.Prp-LandingPage-Hero-Title2 { top: 265px; }
+.Prp-LandingPage-Hero-Desc1 { position: absolute; left: 160px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 26px; font-weight: 600; letter-spacing: -0.0538em; line-height: 30px; color: #333334; }
+.Prp-LandingPage-Hero-Desc2 { position: absolute; left: 160px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 26px; font-weight: 600; letter-spacing: -0.0538em; line-height: 30px; color: #333334; }
+.Prp-LandingPage-Hero-Desc1 { top: 365px; }
+.Prp-LandingPage-Hero-Desc2 { top: 405px; }
+.Prp-LandingPage-Hero-BtnPrimary { position: absolute; top: 485px; width: 200px; height: 80px; box-sizing: border-box; border: none; border-radius: 15px; box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.25); font-family: 'Open Sans', sans-serif; font-size: 26px; font-weight: 600; letter-spacing: -0.0538em; cursor: pointer; }
+.Prp-LandingPage-Hero-BtnSecondary { position: absolute; top: 485px; width: 200px; height: 80px; box-sizing: border-box; border: none; border-radius: 15px; box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.25); font-family: 'Open Sans', sans-serif; font-size: 26px; font-weight: 600; letter-spacing: -0.0538em; cursor: pointer; }
+.Prp-LandingPage-Hero-BtnPrimary { left: 150px; background: #132a56; color: #f8f8f9; }
+.Prp-LandingPage-Hero-BtnSecondary { left: 380px; background: #ffffff; color: #132a56; border: 1px solid #132a56; }
+.Prp-LandingPage-Hero-Img { position: absolute; left: 1070px; top: 58px; width: 700px; height: 500px; object-fit: contain; }
 
-.Prp-Lp-Highlights { position: absolute; left: 0; top: 815px; width: 1920px; height: 630px; background: rgba(19, 42, 86, 0.2); }
-.Prp-Lp-Highlights-Label { position: absolute; left: 852px; top: 50px; width: 196px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 26px; font-weight: 600; letter-spacing: -0.0538em; text-align: center; color: #333334; }
-.Prp-Lp-Highlights-Heading { position: absolute; left: 638px; top: 130px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 32px; font-weight: 600; letter-spacing: -0.0437em; text-align: center; color: #132a56; white-space: nowrap; }
-.Prp-Lp-Highlights-Grid { position: absolute; left: 90px; top: 230px; width: 1739px; height: 350px; }
-.Prp-Lp-Highlights-Card { position: absolute; top: 0; width: 300px; height: 350px; border: 1px solid #176789; border-radius: 20px; background: #ffffff; }
-.Prp-Lp-Highlights-Card:nth-child(1) { left: 0; }
-.Prp-Lp-Highlights-Card:nth-child(2) { left: 359px; }
-.Prp-Lp-Highlights-Card:nth-child(3) { left: 719px; }
-.Prp-Lp-Highlights-Card:nth-child(4) { left: 1079px; }
-.Prp-Lp-Highlights-Card:nth-child(5) { left: 1439px; }
-.Prp-Lp-Highlights-Icon { position: absolute; left: 100px; top: 30px; width: 100px; height: 100px; object-fit: contain; }
-.Prp-Lp-Highlights-Title { position: absolute; left: 13px; top: 160px; width: 274px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 26px; font-weight: 400; letter-spacing: -0.0538em; text-align: center; color: #132a56; }
-.Prp-Lp-Highlights-Text { position: absolute; left: 41px; top: 220px; width: 218px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 22px; font-weight: 400; letter-spacing: -0.0636em; line-height: 1.35; text-align: center; color: #333334; white-space: pre-line; }
+.Prp-LandingPage-Feat { position: absolute; left: 0; top: 815px; width: 1920px; height: 630px; background: rgba(19, 42, 86, 0.2); }
+.Prp-LandingPage-FeatLabel { position: absolute; left: 852px; top: 50px; width: 196px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 26px; font-weight: 600; letter-spacing: -0.0538em; text-align: center; color: #333334; }
+.Prp-LandingPage-FeatHeading { position: absolute; left: 638px; top: 130px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 32px; font-weight: 600; letter-spacing: -0.0437em; text-align: center; color: #132a56; white-space: nowrap; }
+.Prp-LandingPage-Feat-Grid { position: absolute; left: 90px; top: 230px; width: 1739px; height: 350px; }
+.Prp-LandingPage-Feat-Card { position: absolute; top: 0; width: 300px; height: 350px; border: 1px solid #176789; border-radius: 20px; background: #ffffff; }
+.Prp-LandingPage-Feat-Card:nth-child(1) { left: 0; }
+.Prp-LandingPage-Feat-Card:nth-child(2) { left: 359px; }
+.Prp-LandingPage-Feat-Card:nth-child(3) { left: 719px; }
+.Prp-LandingPage-Feat-Card:nth-child(4) { left: 1079px; }
+.Prp-LandingPage-Feat-Card:nth-child(5) { left: 1439px; }
+.Prp-LandingPage-Feat-Icon { position: absolute; left: 100px; top: 30px; width: 100px; height: 100px; object-fit: contain; }
+.Prp-LandingPage-Feat-Title { position: absolute; left: 13px; top: 160px; width: 274px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 26px; font-weight: 400; letter-spacing: -0.0538em; text-align: center; color: #132a56; }
+.Prp-LandingPage-Feat-Text { position: absolute; left: 41px; top: 220px; width: 218px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 22px; font-weight: 400; letter-spacing: -0.0636em; line-height: 1.35; text-align: center; color: #333334; white-space: pre-line; }
 
-.Prp-Lp-Reviews { position: absolute; left: 0; top: 1495px; width: 1920px; height: 623px; background: transparent; }
-.Prp-Lp-Reviews-Label { position: absolute; left: 850px; top: 50px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 26px; font-weight: 600; letter-spacing: -0.0538em; text-transform: uppercase; color: #333334; }
-.Prp-Lp-Reviews-Heading { position: absolute; left: 760px; top: 130px; width: 400px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 32px; font-weight: 600; letter-spacing: -0.0437em; text-align: center; color: #132a56; }
-.Prp-Lp-Reviews-Grid { position: absolute; left: 90px; top: 230px; width: 1739px; height: 343px; }
-.Prp-Lp-Reviews-Card { position: absolute; top: 0; width: 553px; height: 343px; border: 1px solid #c4c7cc; border-radius: 48px; background: #132a56; }
-.Prp-Lp-Reviews-Card:nth-child(1) { left: 0; }
-.Prp-Lp-Reviews-Card:nth-child(2) { left: 593px; }
-.Prp-Lp-Reviews-Card:nth-child(3) { left: 1186px; }
-.Prp-Lp-Reviews-Quote { position: absolute; top: 33px; right: 48px; width: 99px; height: 70px; object-fit: contain; opacity: 0.35; pointer-events: none; }
-.Prp-Lp-Reviews-Header { position: absolute; left: 49px; top: 49px; width: 455px; height: 96px; }
-.Prp-Lp-Reviews-Avatar { position: absolute; left: 0; top: 0; width: 96px; height: 96px; object-fit: contain; flex-shrink: 0; }
-.Prp-Lp-Reviews-Details { position: absolute; left: 128px; top: 15px; width: 327px; }
-.Prp-Lp-Reviews-Rating { display: flex; align-items: center; gap: 4px; margin-bottom: 4px; }
-.Prp-Lp-Reviews-Star { width: 20px; height: 19px; object-fit: contain; }
-.Prp-Lp-Reviews-Name { margin: 0; padding-top: 4px; font-family: 'Open Sans', sans-serif; font-size: 20px; font-weight: 600; color: #c4c7cc; }
-.Prp-Lp-Reviews-Role { margin: 0; font-family: 'Open Sans', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.05em; color: #4d5a81; }
-.Prp-Lp-Reviews-Text { position: absolute; left: 49px; top: 177px; width: 455px; margin: 0; padding-right: 32px; box-sizing: border-box; font-family: 'Open Sans', sans-serif; font-size: 18px; font-style: italic; line-height: 1.45; color: #4d5a81; white-space: pre-line; }
+.Prp-LandingPage-Stories { position: absolute; left: 0; top: 1495px; width: 1920px; height: 623px; background: transparent; }
+.Prp-LandingPage-StoriesLabel { position: absolute; left: 850px; top: 50px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 26px; font-weight: 600; letter-spacing: -0.0538em; text-transform: uppercase; color: #333334; }
+.Prp-LandingPage-StoriesHeading { position: absolute; left: 760px; top: 130px; width: 400px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 32px; font-weight: 600; letter-spacing: -0.0437em; text-align: center; color: #132a56; }
+.Prp-LandingPage-Story-Grid { position: absolute; left: 90px; top: 230px; width: 1739px; height: 343px; }
+.Prp-LandingPage-Story-Card { position: absolute; top: 0; width: 553px; height: 343px; border: 1px solid #c4c7cc; border-radius: 48px; background: #132a56; }
+.Prp-LandingPage-Story-Card:nth-child(1) { left: 0; }
+.Prp-LandingPage-Story-Card:nth-child(2) { left: 593px; }
+.Prp-LandingPage-Story-Card:nth-child(3) { left: 1186px; }
+.Prp-LandingPage-Story-Quote { position: absolute; top: 33px; right: 48px; width: 99px; height: 70px; object-fit: contain; opacity: 0.35; pointer-events: none; }
+.Prp-LandingPage-Story-Header { position: absolute; left: 49px; top: 49px; width: 455px; height: 96px; }
+.Prp-LandingPage-Story-Avatar { position: absolute; left: 0; top: 0; width: 96px; height: 96px; object-fit: contain; flex-shrink: 0; }
+.Prp-LandingPage-Story-Details { position: absolute; left: 128px; top: 15px; width: 327px; }
+.Prp-LandingPage-Story-Rating { display: flex; align-items: center; gap: 4px; margin-bottom: 4px; }
+.Prp-LandingPage-Story-Star { width: 20px; height: 19px; object-fit: contain; }
+.Prp-LandingPage-Story-Name { margin: 0; padding-top: 4px; font-family: 'Open Sans', sans-serif; font-size: 20px; font-weight: 600; color: #c4c7cc; }
+.Prp-LandingPage-Story-Role { margin: 0; font-family: 'Open Sans', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.05em; color: #4d5a81; }
+.Prp-LandingPage-Story-Text { position: absolute; left: 49px; top: 177px; width: 455px; margin: 0; padding-right: 32px; box-sizing: border-box; font-family: 'Open Sans', sans-serif; font-size: 18px; font-style: italic; line-height: 1.45; color: #4d5a81; white-space: pre-line; }
 
-.Prp-Lp-Partners { position: absolute; left: 0; top: 2168px; width: 1920px; height: 340px; background: rgba(19, 42, 86, 0.6); }
-.Prp-Lp-Partners-Label { position: absolute; left: 635px; top: 50px; width: 650px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 26px; font-weight: 600; letter-spacing: 0.0923em; text-transform: uppercase; text-align: center; color: #333334; white-space: nowrap;}
-.Prp-Lp-Partners-Heading { position: absolute; left: 679px; top: 130px; width: 543px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 32px; font-weight: 700; letter-spacing: 0.075em; text-transform: uppercase; text-align: center; color: #132a56; }
-.Prp-Lp-Partners-Logos { position: absolute; left: 117px; top: 230px; width: 1687px; display: flex; align-items: center; gap: 40px; padding: 0 20px; box-sizing: border-box; }
-.Prp-Lp-Partners-Logo { width: 200px; height: 60px; object-fit: contain; border-radius: 10px; flex-shrink: 0; }
+.Prp-LandingPage-Partners { position: absolute; left: 0; top: 2168px; width: 1920px; height: 340px; background: rgba(19, 42, 86, 0.6); }
+.Prp-LandingPage-Partner-Label { position: absolute; left: 635px; top: 50px; width: 650px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 26px; font-weight: 600; letter-spacing: 0.0923em; text-transform: uppercase; text-align: center; color: #333334; white-space: nowrap;}
+.Prp-LandingPage-Partner-Heading { position: absolute; left: 679px; top: 130px; width: 543px; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 32px; font-weight: 700; letter-spacing: 0.075em; text-transform: uppercase; text-align: center; color: #132a56; }
+.Prp-LandingPage-Partner-Logos { position: absolute; left: 117px; top: 230px; width: 1687px; display: flex; align-items: center; gap: 40px; padding: 0 20px; box-sizing: border-box; }
+.Prp-LandingPage-Partner-Logo { width: 200px; height: 60px; object-fit: contain; border-radius: 10px; flex-shrink: 0; }
 
-.Prp-Lp-Footer { position: absolute; left: 0; top: 2558px; width: 1920px; height: 483px; background: rgba(0, 12, 45, 0.9); }
-.Prp-Lp-Footer-Columns { position: absolute; left: 120px; top: 58px; width: 1680px; display: flex; gap: 48px; padding: 0 40px 48px; box-sizing: border-box; border-bottom: 5px solid rgba(255, 255, 255, 0.1); }
-.Prp-Lp-Footer-Column { flex: 1; display: flex; flex-direction: column; gap: 16px; }
-.Prp-Lp-Footer-LegalColumn { padding-bottom: 45px; gap: 0; }
-.Prp-Lp-Footer-Heading { margin: 0 0 16px; font-family: 'Open Sans', sans-serif; font-size: 14px; font-weight: 700; line-height: 20px; letter-spacing: 0.1em; text-transform: uppercase; color: #ffffff; }
-.Prp-Lp-Footer-Link { font-family: 'Open Sans', sans-serif; font-size: 14px; font-weight: 600; line-height: 20px; color: rgba(255, 255, 255, 0.6); text-decoration: none; padding: 2.5px 0 1.5px; }
-.Prp-Lp-Footer-LegalText { margin: 8px 0 0; font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; color: rgba(255, 255, 255, 0.6); white-space: pre-line; }
-.Prp-Lp-Footer-Bottom { position: absolute; left: 120px; top: 350px; width: 1680px; height: 24px; padding: 0 ; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; }
-.Prp-Lp-Footer-Copyright { margin: 0; font-family: 'Open Sans', sans-serif; font-size: 12px; font-weight: 600; line-height: 16px; letter-spacing: 0.05em; color: rgba(255, 255, 255, 0.4); }
-.Prp-Lp-Footer-Socials { display: flex; gap: 32px; align-items: center; }
-.Prp-Lp-Footer-Socials img { width: 24px; height: 24px; object-fit: contain; }
+.Prp-LandingPage-Footer { position: absolute; left: 0; top: 2558px; width: 1920px; height: 483px; background: rgba(0, 12, 45, 0.9); }
+.Prp-LandingPage-Footer-Cols { position: absolute; left: 120px; top: 58px; width: 1680px; display: flex; gap: 48px; padding: 0 40px 48px; box-sizing: border-box; border-bottom: 5px solid rgba(255, 255, 255, 0.1); }
+.Prp-LandingPage-Footer-Col { flex: 1; display: flex; flex-direction: column; gap: 16px; }
+.Prp-LandingPage-Footer-Legal { flex: 1; display: flex; flex-direction: column; gap: 16px; }
+.Prp-LandingPage-Footer-Legal { padding-bottom: 45px; gap: 0; }
+.Prp-LandingPage-Footer-Heading { margin: 0 0 16px; font-family: 'Open Sans', sans-serif; font-size: 14px; font-weight: 700; line-height: 20px; letter-spacing: 0.1em; text-transform: uppercase; color: #ffffff; }
+.Prp-LandingPage-Footer-Link { font-family: 'Open Sans', sans-serif; font-size: 14px; font-weight: 600; line-height: 20px; color: rgba(255, 255, 255, 0.6); text-decoration: none; padding: 2.5px 0 1.5px; }
+.Prp-LandingPage-Footer-LegalText { margin: 8px 0 0; font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; color: rgba(255, 255, 255, 0.6); white-space: pre-line; }
+.Prp-LandingPage-Footer-Bottom { position: absolute; left: 120px; top: 350px; width: 1680px; height: 24px; padding: 0 ; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; }
+.Prp-LandingPage-Copyright { margin: 0; font-family: 'Open Sans', sans-serif; font-size: 12px; font-weight: 600; line-height: 16px; letter-spacing: 0.05em; color: rgba(255, 255, 255, 0.4); }
+.Prp-LandingPage-Social-Links { display: flex; gap: 32px; align-items: center; }
+.Prp-LandingPage-Social-Links img { width: 24px; height: 24px; object-fit: contain; }
 
 @media (min-width: 1200px) {
-  .Prp-Lp-Topbar-Menu { display: contents; }
+  .Prp-LandingPage-Menu { display: contents; }
+  .Prp-LandingPage-Menu-Open { display: contents; }
 }
-.Prp-Lp-Topbar-MenuButton { display: none; }
+.Prp-LandingPage-Menu-Btn { display: none; }
 
 @media (max-width: 1199px) {
-.Prp-Lp-Wrapper { height: auto !important; max-width: 100%; overflow: visible; aspect-ratio: auto; }
-.Prp-Lp-Wrapper .Prp-Lp-Stage { position: relative; width: 100% ; height: auto ; zoom: 1; }
-.Prp-Lp-Wrapper .Prp-Lp-Topbar { position: sticky; top: 0; z-index: 100; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; width: 100%; height: auto; min-height: 72px; padding: 12px 20px; box-sizing: border-box; background: #ffffff; }
-.Prp-Lp-Wrapper .Prp-Lp-Brand { position: relative; left: auto; top: auto; display: flex; align-items: center; gap: 10px; width: auto; max-width: calc(100% - 56px); height: auto; }
-.Prp-Lp-Wrapper .Prp-Lp-Brand-Mark { position: relative; left: auto; top: auto; flex-shrink: 0; }
-.Prp-Lp-Wrapper .Prp-Lp-Brand-Name { position: relative; left: auto; top: auto; height: auto; font-size: clamp(14px, 3.5vw, 20px); line-height: 1.25; }
-.Prp-Lp-Wrapper .Prp-Lp-Topbar-MenuButton { display: flex; flex-direction: column; justify-content: center; gap: 5px; width: 44px; height: 44px; padding: 10px; border: 1px solid #176789; border-radius: 10px; background: #ffffff; cursor: pointer; flex-shrink: 0; position: relative; z-index: 101; }
-.Prp-Lp-Topbar-MenuLine { display: block; width: 100%; height: 3px; border-radius: 2px; background: #132a56; }
-.Prp-Lp-Wrapper .Prp-Lp-Topbar-Menu { display: none; width: 100%; flex-basis: 100%; flex-direction: column; gap: 16px; padding: 8px 0 12px; border-top: 1px solid rgba(23, 103, 137, 0.25); }
-.Prp-Lp-Wrapper .Prp-Lp-Topbar-MenuOpen { display: flex; position: relative; z-index: 100; }
-.Prp-Lp-Wrapper .Prp-Lp-Topbar-NavLinks { position: static; width: 100%; height: auto; display: flex; flex-direction: column; gap: 4px; }
-.Prp-Lp-Wrapper .Prp-Lp-Topbar-NavItem { position: static; left: auto !important; width: auto !important; justify-content: flex-start; padding: 12px 8px; font-size: 16px; }
-.Prp-Lp-Wrapper .Prp-Lp-Topbar-Marker { display: none; }
-.Prp-Lp-Wrapper .Prp-Lp-Topbar-Actions { position: static; left: auto; top: auto; width: 100%; flex-direction: column; gap: 12px; }
-.Prp-Lp-Wrapper .Prp-Lp-Topbar-Login,
-.Prp-Lp-Wrapper .Prp-Lp-Topbar-Register { width: 100%; }
-.Prp-Lp-Wrapper .Prp-Lp-Welcome { position: relative; top: auto; left: auto; width: 100%; height: auto; padding: 32px 20px 40px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; text-align: center; }
-.Prp-Lp-Wrapper .Prp-Lp-Welcome-Label,
-.Prp-Lp-Wrapper .Prp-Lp-Welcome-Headline,
-.Prp-Lp-Wrapper .Prp-Lp-Welcome-Subtext { position: static; left: auto; top: auto; width: 100%; max-width: 640px; }
-.Prp-Lp-Wrapper .Prp-Lp-Welcome-Label { margin-bottom: 12px; font-size: clamp(16px, 4vw, 22px); }
-.Prp-Lp-Wrapper .Prp-Lp-Welcome-Headline { font-size: clamp(28px, 7vw, 40px); line-height: 1.15; }
-.Prp-Lp-Wrapper .Prp-Lp-Welcome-HeadlineSecond { margin-bottom: 16px; }
-.Prp-Lp-Wrapper .Prp-Lp-Welcome-Subtext { font-size: clamp(15px, 3.8vw, 20px); line-height: 1.45; }
-.Prp-Lp-Wrapper .Prp-Lp-Welcome-SubtextSecond { margin-bottom: 24px; }
-.Prp-Lp-Wrapper .Prp-Lp-Welcome-Actions { position: static; top: auto; left: auto; width: 100%; max-width: 280px; height: auto; min-height: 52px; padding: 14px 24px; font-size: clamp(16px, 4vw, 20px); margin-bottom: 12px; }
-.Prp-Lp-Wrapper .Prp-Lp-Welcome-HeroArt { position: static; top: auto; left: auto; width: 100%; max-width: 520px; height: auto; margin-top: 24px; }
-.Prp-Lp-Wrapper .Prp-Lp-Highlights { position: relative; top: auto; width: 100%; height: auto; padding: 48px 20px 56px; box-sizing: border-box; }
-.Prp-Lp-Wrapper .Prp-Lp-Highlights-Label,
-.Prp-Lp-Wrapper .Prp-Lp-Highlights-Heading { position: static; left: auto; top: auto; width: 100%; text-align: center; }
-.Prp-Lp-Wrapper .Prp-Lp-Highlights-Label { margin-bottom: 12px; font-size: clamp(16px, 4vw, 22px); }
-.Prp-Lp-Wrapper .Prp-Lp-Highlights-Heading { margin-bottom: 28px; font-size: clamp(22px, 5vw, 28px); white-space: normal; }
-.Prp-Lp-Wrapper .Prp-Lp-Highlights-Grid { position: static; width: 100%; height: auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
-.Prp-Lp-Wrapper .Prp-Lp-Highlights-Card { position: relative; left: auto !important; top: auto; width: 100%; height: auto; min-height: 300px; padding-bottom: 24px; }
-.Prp-Lp-Wrapper .Prp-Lp-Highlights-Icon { position: relative; left: auto; top: auto; margin: 24px auto 16px; display: block; }
-.Prp-Lp-Wrapper .Prp-Lp-Highlights-Title,
-.Prp-Lp-Wrapper .Prp-Lp-Highlights-Text { position: static; left: auto; top: auto; width: auto; margin-left: 16px; margin-right: 16px; }
-.Prp-Lp-Wrapper .Prp-Lp-Reviews { position: relative; top: auto; width: 100%; height: auto; padding: 48px 20px 56px; box-sizing: border-box; background: #ffffff; }
-.Prp-Lp-Wrapper .Prp-Lp-Reviews-Label,
-.Prp-Lp-Wrapper .Prp-Lp-Reviews-Heading { position: static; left: auto; top: auto; width: 100%; text-align: center; }
-.Prp-Lp-Wrapper .Prp-Lp-Reviews-Label { margin-bottom: 12px; font-size: clamp(16px, 4vw, 22px); }
-.Prp-Lp-Wrapper .Prp-Lp-Reviews-Heading { margin-bottom: 28px; font-size: clamp(22px, 5vw, 28px); }
-.Prp-Lp-Wrapper .Prp-Lp-Reviews-Grid { position: static; width: 100%; height: auto; display: flex; flex-direction: column; gap: 20px; }
-.Prp-Lp-Wrapper .Prp-Lp-Reviews-Card { position: relative; left: auto !important; top: auto; width: 100%; max-width: 553px; margin: 0 auto; height: auto; min-height: 320px; padding-bottom: 32px; }
-.Prp-Lp-Wrapper .Prp-Lp-Reviews-Header { position: relative; left: auto; top: auto; display: flex; align-items: center; gap: 16px; width: auto; height: auto; margin: 32px 24px 16px; }
-.Prp-Lp-Wrapper .Prp-Lp-Reviews-Avatar { position: relative; left: auto; top: auto; }
-.Prp-Lp-Wrapper .Prp-Lp-Reviews-Details { position: relative; left: auto; top: auto; width: auto; }
-.Prp-Lp-Wrapper .Prp-Lp-Reviews-Text { position: relative; left: auto; top: auto; width: auto; margin: 0 24px; font-size: clamp(15px, 3.6vw, 18px); }
-.Prp-Lp-Wrapper .Prp-Lp-Partners { position: relative; top: auto; width: 100%; height: auto; padding: 48px 20px 56px; box-sizing: border-box; }
-.Prp-Lp-Wrapper .Prp-Lp-Partners-Label,
-.Prp-Lp-Wrapper .Prp-Lp-Partners-Heading { position: static; left: auto; top: auto; width: 100%; text-align: center; }
-.Prp-Lp-Wrapper .Prp-Lp-Partners-Label { margin-bottom: 12px; font-size: clamp(14px, 3.5vw, 20px); }
-.Prp-Lp-Wrapper .Prp-Lp-Partners-Heading { margin-bottom: 28px; font-size: clamp(20px, 5vw, 28px); }
-.Prp-Lp-Wrapper .Prp-Lp-Partners-Logos { position: static; width: 100%; height: auto; flex-wrap: wrap; justify-content: center; gap: 16px 24px; padding: 0; }
-.Prp-Lp-Wrapper .Prp-Lp-Partners-Logo { width: min(140px, 40vw); height: auto; max-height: 48px; }
-.Prp-Lp-Wrapper .Prp-Lp-Footer { position: relative; top: auto; width: 100%; height: auto; padding: 40px 20px 32px; box-sizing: border-box; }
-.Prp-Lp-Wrapper .Prp-Lp-Footer-Columns { position: static; width: 100%; height: auto; flex-direction: column; gap: 28px; padding: 0 0 32px; }
-.Prp-Lp-Wrapper .Prp-Lp-Footer-Bottom { position: static; width: 100%; height: auto; flex-direction: column; gap: 20px; padding: 24px 0 0; align-items: flex-start; }
+.Prp-LandingPage-Wrapper { height: auto !important; max-width: 100%; overflow: visible; aspect-ratio: auto; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Stage { position: relative; width: 100% ; height: auto ; zoom: 1; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Header { position: sticky; top: 0; z-index: 100; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; width: 100%; height: auto; min-height: 72px; padding: 12px 20px; box-sizing: border-box; background: #ffffff; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Brand { position: relative; left: auto; top: auto; display: flex; align-items: center; gap: 10px; width: auto; max-width: calc(100% - 56px); height: auto; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-BrandMark { position: relative; left: auto; top: auto; flex-shrink: 0; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-BrandName { position: relative; left: auto; top: auto; height: auto; font-size: clamp(14px, 3.5vw, 20px); line-height: 1.25; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Menu-Btn { display: flex; flex-direction: column; justify-content: center; gap: 5px; width: 44px; height: 44px; padding: 10px; border: 1px solid #176789; border-radius: 10px; background: #ffffff; cursor: pointer; flex-shrink: 0; position: relative; z-index: 101; }
+.Prp-LandingPage-Menu-Line { display: block; width: 100%; height: 3px; border-radius: 2px; background: #132a56; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Menu { display: none; width: 100%; flex-basis: 100%; flex-direction: column; gap: 16px; padding: 8px 0 12px; border-top: 1px solid rgba(23, 103, 137, 0.25); }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Menu-Open { display: none; width: 100%; flex-basis: 100%; flex-direction: column; gap: 16px; padding: 8px 0 12px; border-top: 1px solid rgba(23, 103, 137, 0.25); }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Menu-Open { display: flex; position: relative; z-index: 100; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Nav-Links { position: static; width: 100%; height: auto; display: flex; flex-direction: column; gap: 4px; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Nav-Home { position: static; left: auto !important; width: auto !important; justify-content: flex-start; padding: 12px 8px; font-size: 16px; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Nav-Features { position: static; left: auto !important; width: auto !important; justify-content: flex-start; padding: 12px 8px; font-size: 16px; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Nav-Recruiters { position: static; left: auto !important; width: auto !important; justify-content: flex-start; padding: 12px 8px; font-size: 16px; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Nav-Training { position: static; left: auto !important; width: auto !important; justify-content: flex-start; padding: 12px 8px; font-size: 16px; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Nav-Stories { position: static; left: auto !important; width: auto !important; justify-content: flex-start; padding: 12px 8px; font-size: 16px; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-NavIndicator { display: none; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Header-Actions { position: static; left: auto; top: auto; width: 100%; flex-direction: column; gap: 12px; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Btn-Login,
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Btn-Register { width: 100%; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Hero { position: relative; top: auto; left: auto; width: 100%; height: auto; padding: 32px 20px 40px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; text-align: center; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Hero-Label,
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Hero-Title1,
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Hero-Title2,
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Hero-Desc1 { position: static; left: auto; top: auto; width: 100%; max-width: 640px; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Hero-Desc2 { position: static; left: auto; top: auto; width: 100%; max-width: 640px; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Hero-Label { margin-bottom: 12px; font-size: clamp(16px, 4vw, 22px); }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Hero-Title1 { font-size: clamp(28px, 7vw, 40px); line-height: 1.15; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Hero-Title2 { font-size: clamp(28px, 7vw, 40px); line-height: 1.15; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Hero-Title2 { margin-bottom: 16px; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Hero-Desc1 { font-size: clamp(15px, 3.8vw, 20px); line-height: 1.45; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Hero-Desc2 { font-size: clamp(15px, 3.8vw, 20px); line-height: 1.45; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Hero-Desc2 { margin-bottom: 24px; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Hero-BtnPrimary { position: static; top: auto; left: auto; width: 100%; max-width: 280px; height: auto; min-height: 52px; padding: 14px 24px; font-size: clamp(16px, 4vw, 20px); margin-bottom: 12px; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Hero-BtnSecondary { position: static; top: auto; left: auto; width: 100%; max-width: 280px; height: auto; min-height: 52px; padding: 14px 24px; font-size: clamp(16px, 4vw, 20px); margin-bottom: 12px; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Hero-Img { position: static; top: auto; left: auto; width: 100%; max-width: 520px; height: auto; margin-top: 24px; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Feat { position: relative; top: auto; width: 100%; height: auto; padding: 48px 20px 56px; box-sizing: border-box; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-FeatLabel,
+.Prp-LandingPage-Wrapper .Prp-LandingPage-FeatHeading { position: static; left: auto; top: auto; width: 100%; text-align: center; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-FeatLabel { margin-bottom: 12px; font-size: clamp(16px, 4vw, 22px); }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-FeatHeading { margin-bottom: 28px; font-size: clamp(22px, 5vw, 28px); white-space: normal; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Feat-Grid { position: static; width: 100%; height: auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Feat-Card { position: relative; left: auto !important; top: auto; width: 100%; height: auto; min-height: 300px; padding-bottom: 24px; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Feat-Icon { position: relative; left: auto; top: auto; margin: 24px auto 16px; display: block; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Feat-Title,
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Feat-Text { position: static; left: auto; top: auto; width: auto; margin-left: 16px; margin-right: 16px; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Stories { position: relative; top: auto; width: 100%; height: auto; padding: 48px 20px 56px; box-sizing: border-box; background: #ffffff; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-StoriesLabel,
+.Prp-LandingPage-Wrapper .Prp-LandingPage-StoriesHeading { position: static; left: auto; top: auto; width: 100%; text-align: center; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-StoriesLabel { margin-bottom: 12px; font-size: clamp(16px, 4vw, 22px); }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-StoriesHeading { margin-bottom: 28px; font-size: clamp(22px, 5vw, 28px); }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Story-Grid { position: static; width: 100%; height: auto; display: flex; flex-direction: column; gap: 20px; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Story-Card { position: relative; left: auto !important; top: auto; width: 100%; max-width: 553px; margin: 0 auto; height: auto; min-height: 320px; padding-bottom: 32px; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Story-Header { position: relative; left: auto; top: auto; display: flex; align-items: center; gap: 16px; width: auto; height: auto; margin: 32px 24px 16px; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Story-Avatar { position: relative; left: auto; top: auto; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Story-Details { position: relative; left: auto; top: auto; width: auto; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Story-Text { position: relative; left: auto; top: auto; width: auto; margin: 0 24px; font-size: clamp(15px, 3.6vw, 18px); }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Partners { position: relative; top: auto; width: 100%; height: auto; padding: 48px 20px 56px; box-sizing: border-box; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Partner-Label,
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Partner-Heading { position: static; left: auto; top: auto; width: 100%; text-align: center; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Partner-Label { margin-bottom: 12px; font-size: clamp(14px, 3.5vw, 20px); }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Partner-Heading { margin-bottom: 28px; font-size: clamp(20px, 5vw, 28px); }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Partner-Logos { position: static; width: 100%; height: auto; flex-wrap: wrap; justify-content: center; gap: 16px 24px; padding: 0; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Partner-Logo { width: min(140px, 40vw); height: auto; max-height: 48px; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Footer { position: relative; top: auto; width: 100%; height: auto; padding: 40px 20px 32px; box-sizing: border-box; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Footer-Cols { position: static; width: 100%; height: auto; flex-direction: column; gap: 28px; padding: 0 0 32px; }
+.Prp-LandingPage-Wrapper .Prp-LandingPage-Footer-Bottom { position: static; width: 100%; height: auto; flex-direction: column; gap: 20px; padding: 24px 0 0; align-items: flex-start; }
 }
 
 @media (max-width: 767px) {
-  .Prp-Lp-Wrapper .Prp-Lp-Highlights-Grid { grid-template-columns: 1fr; }
-  .Prp-Lp-Wrapper .Prp-Lp-Brand-Name br { display: none; }
-  .Prp-Lp-Wrapper .Prp-Lp-Welcome-Actions { max-width: 100%; }
-  .Prp-Lp-Wrapper .Prp-Lp-Reviews-Header { flex-direction: column; align-items: flex-start; gap: 16px; }
-  .Prp-Lp-Wrapper .Prp-Lp-Reviews-Details { width: 100%; }
+  .Prp-LandingPage-Wrapper .Prp-LandingPage-Feat-Grid { grid-template-columns: 1fr; }
+  .Prp-LandingPage-Wrapper .Prp-LandingPage-BrandName br { display: none; }
+  .Prp-LandingPage-Wrapper .Prp-LandingPage-Hero-BtnPrimary { max-width: 100%; }
+  .Prp-LandingPage-Wrapper .Prp-LandingPage-Hero-BtnSecondary { max-width: 100%; }
+  .Prp-LandingPage-Wrapper .Prp-LandingPage-Story-Header { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .Prp-LandingPage-Wrapper .Prp-LandingPage-Story-Details { width: 100%; }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
-  .Prp-Lp-Wrapper .Prp-Lp-Topbar-MenuOpen { flex-direction: row; flex-wrap: wrap; align-items: center; }
-  .Prp-Lp-Wrapper .Prp-Lp-Topbar-NavLinks { flex: 1 1 100%; flex-direction: row; flex-wrap: wrap; gap: 8px 16px; }
-  .Prp-Lp-Wrapper .Prp-Lp-Topbar-Actions { flex: 1 1 100%; flex-direction: row; }
-  .Prp-Lp-Wrapper .Prp-Lp-Topbar-Login,
-  .Prp-Lp-Wrapper .Prp-Lp-Topbar-Register { width: auto; flex: 1; }
-  .Prp-Lp-Wrapper .Prp-Lp-Welcome { padding: 40px 32px 48px; }
-  .Prp-Lp-Wrapper .Prp-Lp-Welcome-Actions { width: calc(50% - 8px); max-width: none; display: inline-flex; align-items: center; justify-content: center; }
-  .Prp-Lp-Wrapper .Prp-Lp-Welcome { display: grid; grid-template-columns: 1fr 1fr; align-items: center; text-align: left; column-gap: 24px; }
-  .Prp-Lp-Wrapper .Prp-Lp-Welcome-Label,
-  .Prp-Lp-Wrapper .Prp-Lp-Welcome-Headline,
-  .Prp-Lp-Wrapper .Prp-Lp-Welcome-Subtext,
-  .Prp-Lp-Wrapper .Prp-Lp-Welcome-Actions { grid-column: 1; }
-  .Prp-Lp-Wrapper .Prp-Lp-Welcome-HeroArt { grid-column: 2; grid-row: 1 / span 6; margin-top: 0; align-self: center; }
-  .Prp-Lp-Wrapper .Prp-Lp-Reviews-Grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
-  .Prp-Lp-Wrapper .Prp-Lp-Reviews-Card:last-child { grid-column: 1 / -1; max-width: 553px; }
+  .Prp-LandingPage-Wrapper .Prp-LandingPage-Menu-Open { flex-direction: row; flex-wrap: wrap; align-items: center; }
+  .Prp-LandingPage-Wrapper .Prp-LandingPage-Nav-Links { flex: 1 1 100%; flex-direction: row; flex-wrap: wrap; gap: 8px 16px; }
+  .Prp-LandingPage-Wrapper .Prp-LandingPage-Header-Actions { flex: 1 1 100%; flex-direction: row; }
+  .Prp-LandingPage-Wrapper .Prp-LandingPage-Btn-Login,
+  .Prp-LandingPage-Wrapper .Prp-LandingPage-Btn-Register { width: auto; flex: 1; }
+  .Prp-LandingPage-Wrapper .Prp-LandingPage-Hero { padding: 40px 32px 48px; }
+  .Prp-LandingPage-Wrapper .Prp-LandingPage-Hero-BtnPrimary { width: calc(50% - 8px); max-width: none; display: inline-flex; align-items: center; justify-content: center; }
+  .Prp-LandingPage-Wrapper .Prp-LandingPage-Hero-BtnSecondary { width: calc(50% - 8px); max-width: none; display: inline-flex; align-items: center; justify-content: center; }
+  .Prp-LandingPage-Wrapper .Prp-LandingPage-Hero { display: grid; grid-template-columns: 1fr 1fr; align-items: center; text-align: left; column-gap: 24px; }
+  .Prp-LandingPage-Wrapper .Prp-LandingPage-Hero-Label,
+  .Prp-LandingPage-Wrapper .Prp-LandingPage-Hero-Title1,
+  .Prp-LandingPage-Wrapper .Prp-LandingPage-Hero-Title2,
+  .Prp-LandingPage-Wrapper .Prp-LandingPage-Hero-Desc1,
+  .Prp-LandingPage-Wrapper .Prp-LandingPage-Hero-Desc2,
+  .Prp-LandingPage-Wrapper .Prp-LandingPage-Hero-BtnPrimary { grid-column: 1; }
+  .Prp-LandingPage-Wrapper .Prp-LandingPage-Hero-BtnSecondary { grid-column: 1; }
+  .Prp-LandingPage-Wrapper .Prp-LandingPage-Hero-Img { grid-column: 2; grid-row: 1 / span 6; margin-top: 0; align-self: center; }
+  .Prp-LandingPage-Wrapper .Prp-LandingPage-Story-Grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+  .Prp-LandingPage-Wrapper .Prp-LandingPage-Story-Card:last-child { grid-column: 1 / -1; max-width: 553px; }
 }

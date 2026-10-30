@@ -90,104 +90,104 @@ const LandingPage = () => {
   const navigate = useNavigate()
   const [mobileNavOpen, setMobileNavOpen] = useState(false)
   return (
-    <div className="Prp-Lp-Wrapper">
-  <div className="Prp-Lp-Stage">
-        <header className="Prp-Lp-Topbar">
-          <div className="Prp-Lp-Brand">
-            <div className="Prp-Lp-Brand-Mark">
-              <img src={GraduationCapIcon} alt="" className="Prp-Lp-Brand-Icon" />
+    <div className="Prp-LandingPage-Wrapper">
+  <div className="Prp-LandingPage-Stage">
+        <header className="Prp-LandingPage-Header">
+          <div className="Prp-LandingPage-Brand">
+            <div className="Prp-LandingPage-BrandMark">
+              <img src={GraduationCapIcon} alt="" className="Prp-LandingPage-BrandIcon" />
             </div>
-            <p className="Prp-Lp-Brand-Name">
+            <p className="Prp-LandingPage-BrandName">
               Placement &
               <br />
               Recruitment Platform
             </p>
           </div>
 
-          <button type="button" className="Prp-Lp-Topbar-MenuButton" aria-expanded={mobileNavOpen} aria-label={mobileNavOpen ? 'Close navigation menu' : 'Open navigation menu'} onClick={() => setMobileNavOpen((open) => !open)}
+          <button type="button" className="Prp-LandingPage-Menu-Btn" aria-expanded={mobileNavOpen} aria-label={mobileNavOpen ? 'Close navigation menu' : 'Open navigation menu'} onClick={() => setMobileNavOpen((open) => !open)}
           >
-            <span className="Prp-Lp-Topbar-MenuLine" />
-            <span className="Prp-Lp-Topbar-MenuLine" />
-            <span className="Prp-Lp-Topbar-MenuLine" />
+            <span className="Prp-LandingPage-Menu-Line" />
+            <span className="Prp-LandingPage-Menu-Line" />
+            <span className="Prp-LandingPage-Menu-Line" />
           </button>
 
           <div
             className={
               mobileNavOpen
-                ? 'Prp-Lp-Topbar-Menu Prp-Lp-Topbar-MenuOpen'
-                : 'Prp-Lp-Topbar-Menu'
+                ? 'Prp-LandingPage-Menu-Open'
+                : 'Prp-LandingPage-Menu'
             }
           >
-            <nav className="Prp-Lp-Topbar-NavLinks" aria-label="Primary">
-              <Link to="#" className="Prp-Lp-Topbar-NavItem Prp-Lp-Topbar-Home" onClick={() => setMobileNavOpen(false)}
+            <nav className="Prp-LandingPage-Nav-Links" aria-label="Primary">
+              <Link to="#" className="Prp-LandingPage-Nav-Home" onClick={() => setMobileNavOpen(false)}
               >
                 Home
               </Link>
-              <Link to="#" className="Prp-Lp-Topbar-NavItem Prp-Lp-Topbar-Features" onClick={() => setMobileNavOpen(false)}
+              <Link to="#" className="Prp-LandingPage-Nav-Features" onClick={() => setMobileNavOpen(false)}
               >
                 Features
               </Link>
-              <Link to="#" className="Prp-Lp-Topbar-NavItem Prp-Lp-Topbar-Recruiters" onClick={() => setMobileNavOpen(false)}
+              <Link to="#" className="Prp-LandingPage-Nav-Recruiters" onClick={() => setMobileNavOpen(false)}
               >
                 For Recruiters/Employers
               </Link>
-              <Link to="#" className="Prp-Lp-Topbar-NavItem Prp-Lp-Topbar-Training" onClick={() => setMobileNavOpen(false)}
+              <Link to="#" className="Prp-LandingPage-Nav-Training" onClick={() => setMobileNavOpen(false)}
               >
                 For Training Institutions
               </Link>
-              <Link to="#" className="Prp-Lp-Topbar-NavItem Prp-Lp-Topbar-Stories" onClick={() => setMobileNavOpen(false)}
+              <Link to="#" className="Prp-LandingPage-Nav-Stories" onClick={() => setMobileNavOpen(false)}
               >
                 Success Stories
               </Link>
             </nav>
 
-            <div className="Prp-Lp-Topbar-Actions">
-              <button type="button" className="Prp-Lp-Topbar-Login" onClick={() => navigate("/PRP_Portal/Login")}>
+            <div className="Prp-LandingPage-Header-Actions">
+              <button type="button" className="Prp-LandingPage-Btn-Login" onClick={() => navigate("/PRP_Portal/Login")}>
                 Login
               </button>
-              <button type="button" className="Prp-Lp-Topbar-Register" onClick={() => navigate("/PRP_Portal/WelcomeRegistration")}>
+              <button type="button" className="Prp-LandingPage-Btn-Register" onClick={() => navigate("/PRP_Portal/WelcomeRegistration")}>
                 Register
               </button>
             </div>
           </div>
 
-          <img src={NavActiveIndicator} alt="" className="Prp-Lp-Topbar-Marker" />
+          <img src={NavActiveIndicator} alt="" className="Prp-LandingPage-NavIndicator" />
         </header>
 
-        <section className="Prp-Lp-Welcome">
-          <p className="Prp-Lp-Welcome-Label">BUILD YOUR FUTURE</p>
-          <p className="Prp-Lp-Welcome-Headline Prp-Lp-Welcome-HeadlineFirst">
+        <section className="Prp-LandingPage-Hero">
+          <p className="Prp-LandingPage-Hero-Label">BUILD YOUR FUTURE</p>
+          <p className="Prp-LandingPage-Hero-Title1">
             Connect. Learn.
           </p>
-          <p className="Prp-Lp-Welcome-Headline Prp-Lp-Welcome-HeadlineSecond">
+          <p className="Prp-LandingPage-Hero-Title2">
             Get Placed.
           </p>
-          <p className="Prp-Lp-Welcome-Subtext Prp-Lp-Welcome-SubtextFirst">
+          <p className="Prp-LandingPage-Hero-Desc1">
             The all-in-one platform that bridges the gap between
           </p>
-          <p className="Prp-Lp-Welcome-Subtext Prp-Lp-Welcome-SubtextSecond">
+          <p className="Prp-LandingPage-Hero-Desc2">
             talented individuals, top employers and training institutions.
           </p>
-          <button type="button" className="Prp-Lp-Welcome-Actions Prp-Lp-Welcome-CTA">
+          <button type="button" className="Prp-LandingPage-Hero-BtnPrimary">
             Get Started
           </button>
-          <button type="button" className="Prp-Lp-Welcome-Actions Prp-Lp-Welcome-AltCTA">
+          <button type="button" className="Prp-LandingPage-Hero-BtnSecondary">
             Explore Jobs
           </button>
-          <img src={InterviewBro} alt="Interview illustration" className="Prp-Lp-Welcome-HeroArt" />
+          <img src={InterviewBro} alt="Interview illustration" className="Prp-LandingPage-Hero-Img" />
         </section>
 
-        <section className="Prp-Lp-Highlights">
-          <p className="Prp-Lp-Highlights-Label">WHY CHOOSE US</p>
-          <h2 className="Prp-Lp-Highlights-Heading">
+        <section className="Prp-LandingPage-Feat">
+          <p className="Prp-LandingPage-FeatLabel">WHY CHOOSE US</p>
+          <h2 className="Prp-LandingPage-FeatHeading">
             Everything You Need for a Successful Career
           </h2>
-          <div className="Prp-Lp-Highlights-Grid">
+          <div className="Prp-LandingPage-Feat-Grid">
             {featureCards.map((card) => (
-              <div key={card.title} className="Prp-Lp-Highlights-Card">
-                <img src={card.icon} alt="" className="Prp-Lp-Highlights-Icon" />
-                <h3 className="Prp-Lp-Highlights-Title">{card.title}</h3>
-                <p className="Prp-Lp-Highlights-Text">
+              <div key={card.title} className="Prp-LandingPage-Feat-Card">
+                <img src={card.icon} alt="" className="Prp-LandingPage-Feat-Icon" />
+                <h3 className="Prp-LandingPage-Feat-Title">{card.title}</h3>
+                <p className="Prp-LandingPage-Feat-Text">
                   {card.description}
                 </p>
               </div>
@@ -195,75 +195,75 @@ const LandingPage = () => {
           </div>
         </section>
 
-        <section className="Prp-Lp-Reviews">
-          <p className="Prp-Lp-Reviews-Label">SUCCESS STORIES</p>
-          <h2 className="Prp-Lp-Reviews-Heading">WHAT OUR USERS SAY</h2>
-          <div className="Prp-Lp-Reviews-Grid">
+        <section className="Prp-LandingPage-Stories">
+          <p className="Prp-LandingPage-StoriesLabel">SUCCESS STORIES</p>
+          <h2 className="Prp-LandingPage-StoriesHeading">WHAT OUR USERS SAY</h2>
+          <div className="Prp-LandingPage-Story-Grid">
             {testimonials.map((item) => (
-              <div key={item.name} className="Prp-Lp-Reviews-Card">
-                <img src={QuoteIcon} alt="" className="Prp-Lp-Reviews-Quote" />
-                <div className="Prp-Lp-Reviews-Header">
-                  <img src={TestimonialUserAvatar} alt="" className="Prp-Lp-Reviews-Avatar" />
-                  <div className="Prp-Lp-Reviews-Details">
-                    <div className="Prp-Lp-Reviews-Rating">
+              <div key={item.name} className="Prp-LandingPage-Story-Card">
+                <img src={QuoteIcon} alt="" className="Prp-LandingPage-Story-Quote" />
+                <div className="Prp-LandingPage-Story-Header">
+                  <img src={TestimonialUserAvatar} alt="" className="Prp-LandingPage-Story-Avatar" />
+                  <div className="Prp-LandingPage-Story-Details">
+                    <div className="Prp-LandingPage-Story-Rating">
                       {Array.from({ length: 5 }).map((_, i) => (
-                        <img key={i} src={StarIcon} alt="" className="Prp-Lp-Reviews-Star" />
+                        <img key={i} src={StarIcon} alt="" className="Prp-LandingPage-Story-Star" />
                       ))}
                     </div>
-                    <p className="Prp-Lp-Reviews-Name">{item.name}</p>
-                    <p className="Prp-Lp-Reviews-Role">{item.role}</p>
+                    <p className="Prp-LandingPage-Story-Name">{item.name}</p>
+                    <p className="Prp-LandingPage-Story-Role">{item.role}</p>
                   </div>
                 </div>
-                <p className="Prp-Lp-Reviews-Text">{item.quote}</p>
+                <p className="Prp-LandingPage-Story-Text">{item.quote}</p>
               </div>
             ))}
           </div>
         </section>
 
-        <section className="Prp-Lp-Partners">
-          <p className="Prp-Lp-Partners-Label">TRUSTED BY Leading Companies</p>
-          <h2 className="Prp-Lp-Partners-Heading">Top companies hire here</h2>
-          <div className="Prp-Lp-Partners-Logos">
+        <section className="Prp-LandingPage-Partners">
+          <p className="Prp-LandingPage-Partner-Label">TRUSTED BY Leading Companies</p>
+          <h2 className="Prp-LandingPage-Partner-Heading">Top companies hire here</h2>
+          <div className="Prp-LandingPage-Partner-Logos">
             {companyLogos.map((logo) => (
-              <img key={logo.alt} src={logo.src} alt={logo.alt} className="Prp-Lp-Partners-Logo" />
+              <img key={logo.alt} src={logo.src} alt={logo.alt} className="Prp-LandingPage-Partner-Logo" />
             ))}
           </div>
         </section>
 
-        <footer className="Prp-Lp-Footer">
-          <div className="Prp-Lp-Footer-Columns">
-            <div className="Prp-Lp-Footer-Column">
-              <p className="Prp-Lp-Footer-Heading">COMPANY</p>
-              <Link to="#" className="Prp-Lp-Footer-Link">About Us</Link>
-              <Link to="#" className="Prp-Lp-Footer-Link">Careers</Link>
-              <Link to="#" className="Prp-Lp-Footer-Link">contact</Link>
+        <footer className="Prp-LandingPage-Footer">
+          <div className="Prp-LandingPage-Footer-Cols">
+            <div className="Prp-LandingPage-Footer-Col">
+              <p className="Prp-LandingPage-Footer-Heading">COMPANY</p>
+              <Link to="#" className="Prp-LandingPage-Footer-Link">About Us</Link>
+              <Link to="#" className="Prp-LandingPage-Footer-Link">Careers</Link>
+              <Link to="#" className="Prp-LandingPage-Footer-Link">contact</Link>
             </div>
-            <div className="Prp-Lp-Footer-Column">
-              <p className="Prp-Lp-Footer-Heading">Platform</p>
-              <Link to="#" className="Prp-Lp-Footer-Link">Job Postings</Link>
-              <Link to="#" className="Prp-Lp-Footer-Link">AI Resume Matching</Link>
-              <Link to="#" className="Prp-Lp-Footer-Link">Training & skill Readiness</Link>
-              <Link to="#" className="Prp-Lp-Footer-Link">Placement Analytics</Link>
+            <div className="Prp-LandingPage-Footer-Col">
+              <p className="Prp-LandingPage-Footer-Heading">Platform</p>
+              <Link to="#" className="Prp-LandingPage-Footer-Link">Job Postings</Link>
+              <Link to="#" className="Prp-LandingPage-Footer-Link">AI Resume Matching</Link>
+              <Link to="#" className="Prp-LandingPage-Footer-Link">Training & skill Readiness</Link>
+              <Link to="#" className="Prp-LandingPage-Footer-Link">Placement Analytics</Link>
             </div>
-            <div className="Prp-Lp-Footer-Column">
-              <p className="Prp-Lp-Footer-Heading">SUPPORT</p>
-              <Link to="#" className="Prp-Lp-Footer-Link">Help Center</Link>
-              <Link to="#" className="Prp-Lp-Footer-Link">FAQ</Link>
-              <Link to="#" className="Prp-Lp-Footer-Link">Raise Issue</Link>
-              <Link to="#" className="Prp-Lp-Footer-Link">Contact Support</Link>
+            <div className="Prp-LandingPage-Footer-Col">
+              <p className="Prp-LandingPage-Footer-Heading">SUPPORT</p>
+              <Link to="#" className="Prp-LandingPage-Footer-Link">Help Center</Link>
+              <Link to="#" className="Prp-LandingPage-Footer-Link">FAQ</Link>
+              <Link to="#" className="Prp-LandingPage-Footer-Link">Raise Issue</Link>
+              <Link to="#" className="Prp-LandingPage-Footer-Link">Contact Support</Link>
             </div>
-            <div className="Prp-Lp-Footer-Column Prp-Lp-Footer-LegalColumn">
-              <p className="Prp-Lp-Footer-Heading">LEGAL</p>
-              <p className="Prp-Lp-Footer-LegalText">
+            <div className="Prp-LandingPage-Footer-Legal">
+              <p className="Prp-LandingPage-Footer-Heading">LEGAL</p>
+              <p className="Prp-LandingPage-Footer-LegalText">
                 Privacy Policy{'\n'} Terms & Conditions{'\n'} Cookie Policy
               </p>
             </div>
           </div>
-          <div className="Prp-Lp-Footer-Bottom">
-            <p className="Prp-Lp-Footer-Copyright">
+          <div className="Prp-LandingPage-Footer-Bottom">
+            <p className="Prp-LandingPage-Copyright">
               © 2026 Placement and Recruitment Platform.
             </p>
-            <div className="Prp-Lp-Footer-Socials">
+            <div className="Prp-LandingPage-Social-Links">
               <Link to="#" aria-label="Facebook">
                 <img src={FacebookIcon} alt="" />
               </Link>
