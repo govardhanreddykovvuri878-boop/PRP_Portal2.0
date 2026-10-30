@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import './LandingPage.css'
 
 import InterviewBro from '../assets/LandingPageAssets/InterviewBro.png'
@@ -23,10 +23,6 @@ import FacebookIcon from '../assets/LandingPageAssets/FacebookIcon.png'
 import TwitterXIcon from '../assets/LandingPageAssets/TwitterXIcon.png'
 import InstagramIcon from '../assets/LandingPageAssets/InstagramIcon.png'
 import NavActiveIndicator from '../assets/LandingPageAssets/NavActiveIndicator.png'
-
-const FIGMA_WIDTH = 1920
-const FIGMA_HEIGHT = 3041
-const DESKTOP_STAGE_MIN_WIDTH = 1200
 
 const featureCards = [
   {
@@ -92,233 +88,191 @@ const companyLogos = [
 
 const LandingPage = () => {
   const navigate = useNavigate()
-  const scalerRef = useRef(null)
-  const wasDesktopStageRef = useRef(true)
-  const [scale, setScale] = useState(1)
-  const [useDesktopStage, setUseDesktopStage] = useState(true)
   const [mobileNavOpen, setMobileNavOpen] = useState(false)
-
-  useEffect(() => {
-    const node = scalerRef.current
-    if (!node) return
-
-    const updateScale = () => {
-      const available = node.getBoundingClientRect().width
-      const isDesktop = available >= DESKTOP_STAGE_MIN_WIDTH
-
-      if (isDesktop) {
-        setUseDesktopStage(true)
-        setScale(Math.min(1, available / FIGMA_WIDTH))
-        if (!wasDesktopStageRef.current) {
-          setMobileNavOpen(false)
-        }
-      } else {
-        setUseDesktopStage(false)
-        setScale(1)
-      }
-
-      wasDesktopStageRef.current = isDesktop
-    }
-
-    updateScale()
-    const observer = new ResizeObserver(updateScale)
-    observer.observe(node)
-    window.addEventListener('resize', updateScale)
-
-    return () => {
-      observer.disconnect()
-      window.removeEventListener('resize', updateScale)
-    }
-  }, [])
-
-  const scalerClassName = useDesktopStage
-    ? 'Prp-LandingPage-Scaler'
-    : 'Prp-LandingPage-Scaler Prp-LandingPage-Scaler-Fluid'
-
   return (
-    <div ref={scalerRef} className={scalerClassName} style={useDesktopStage ? { height: FIGMA_HEIGHT * scale } : undefined}>
-      <div className="Prp-LandingPage-Stage" style={useDesktopStage ? { transform: `scale(${scale})` } : undefined}>
-        <header className="Prp-LandingPage-NavBar">
-          <div className="Prp-LandingPage-NavBar-Logo">
-            <div className="Prp-LandingPage-NavBar-LogoIconWrap">
-              <img src={GraduationCapIcon} alt="" className="Prp-LandingPage-NavBar-LogoIcon" />
+    <div className="Prp-Lp-Wrapper">
+  <div className="Prp-Lp-Stage">
+        <header className="Prp-Lp-Topbar">
+          <div className="Prp-Lp-Brand">
+            <div className="Prp-Lp-Brand-Mark">
+              <img src={GraduationCapIcon} alt="" className="Prp-Lp-Brand-Icon" />
             </div>
-            <p className="Prp-LandingPage-NavBar-LogoTitle">
-              Placement &amp;
+            <p className="Prp-Lp-Brand-Name">
+              Placement &
               <br />
               Recruitment Platform
             </p>
           </div>
 
-          <button type="button" className="Prp-LandingPage-NavBar-MenuToggle" aria-expanded={mobileNavOpen} aria-label={mobileNavOpen ? 'Close navigation menu' : 'Open navigation menu'} onClick={() => setMobileNavOpen((open) => !open)}
+          <button type="button" className="Prp-Lp-Topbar-MenuButton" aria-expanded={mobileNavOpen} aria-label={mobileNavOpen ? 'Close navigation menu' : 'Open navigation menu'} onClick={() => setMobileNavOpen((open) => !open)}
           >
-            <span className="Prp-LandingPage-NavBar-MenuBar" />
-            <span className="Prp-LandingPage-NavBar-MenuBar" />
-            <span className="Prp-LandingPage-NavBar-MenuBar" />
+            <span className="Prp-Lp-Topbar-MenuLine" />
+            <span className="Prp-Lp-Topbar-MenuLine" />
+            <span className="Prp-Lp-Topbar-MenuLine" />
           </button>
 
           <div
             className={
               mobileNavOpen
-                ? 'Prp-LandingPage-NavBar-Panel Prp-LandingPage-NavBar-Panel-Open'
-                : 'Prp-LandingPage-NavBar-Panel'
+                ? 'Prp-Lp-Topbar-Menu Prp-Lp-Topbar-MenuOpen'
+                : 'Prp-Lp-Topbar-Menu'
             }
           >
-            <nav className="Prp-LandingPage-NavBar-Links" aria-label="Primary">
-              <a href="#" className="Prp-LandingPage-NavBar-Link Prp-LandingPage-NavBar-Link-Home" onClick={() => setMobileNavOpen(false)}
+            <nav className="Prp-Lp-Topbar-NavLinks" aria-label="Primary">
+              <Link to="#" className="Prp-Lp-Topbar-NavItem Prp-Lp-Topbar-Home" onClick={() => setMobileNavOpen(false)}
               >
                 Home
-              </a>
-              <a href="#" className="Prp-LandingPage-NavBar-Link Prp-LandingPage-NavBar-Link-Features" onClick={() => setMobileNavOpen(false)}
+              </Link>
+              <Link to="#" className="Prp-Lp-Topbar-NavItem Prp-Lp-Topbar-Features" onClick={() => setMobileNavOpen(false)}
               >
                 Features
-              </a>
-              <a href="#" className="Prp-LandingPage-NavBar-Link Prp-LandingPage-NavBar-Link-Recruiters" onClick={() => setMobileNavOpen(false)}
+              </Link>
+              <Link to="#" className="Prp-Lp-Topbar-NavItem Prp-Lp-Topbar-Recruiters" onClick={() => setMobileNavOpen(false)}
               >
                 For Recruiters/Employers
-              </a>
-              <a href="#" className="Prp-LandingPage-NavBar-Link Prp-LandingPage-NavBar-Link-Training" onClick={() => setMobileNavOpen(false)}
+              </Link>
+              <Link to="#" className="Prp-Lp-Topbar-NavItem Prp-Lp-Topbar-Training" onClick={() => setMobileNavOpen(false)}
               >
                 For Training Institutions
-              </a>
-              <a href="#" className="Prp-LandingPage-NavBar-Link Prp-LandingPage-NavBar-Link-Success" onClick={() => setMobileNavOpen(false)}
+              </Link>
+              <Link to="#" className="Prp-Lp-Topbar-NavItem Prp-Lp-Topbar-Stories" onClick={() => setMobileNavOpen(false)}
               >
                 Success Stories
-              </a>
+              </Link>
             </nav>
 
-            <div className="Prp-LandingPage-NavBar-Actions">
-              <button type="button" className="Prp-LandingPage-NavBar-LoginButton" onClick={() => navigate("/PRP_Portal/Login")}>
+            <div className="Prp-Lp-Topbar-Actions">
+              <button type="button" className="Prp-Lp-Topbar-Login" onClick={() => navigate("/PRP_Portal/Login")}>
                 Login
               </button>
-              <button type="button" className="Prp-LandingPage-NavBar-RegisterButton" onClick={() => navigate("/PRP_Portal/WelcomeRegistration")}>
+              <button type="button" className="Prp-Lp-Topbar-Register" onClick={() => navigate("/PRP_Portal/WelcomeRegistration")}>
                 Register
               </button>
             </div>
           </div>
 
-          <img src={NavActiveIndicator} alt="" className="Prp-LandingPage-NavBar-ActiveLine" />
+          <img src={NavActiveIndicator} alt="" className="Prp-Lp-Topbar-Marker" />
         </header>
 
-        <section className="Prp-LandingPage-Hero-Section">
-          <p className="Prp-LandingPage-Hero-Eyebrow">BUILD YOUR FUTURE</p>
-          <p className="Prp-LandingPage-Hero-Title Prp-LandingPage-Hero-Title-Line1">
+        <section className="Prp-Lp-Welcome">
+          <p className="Prp-Lp-Welcome-Label">BUILD YOUR FUTURE</p>
+          <p className="Prp-Lp-Welcome-Headline Prp-Lp-Welcome-HeadlineFirst">
             Connect. Learn.
           </p>
-          <p className="Prp-LandingPage-Hero-Title Prp-LandingPage-Hero-Title-Line2">
+          <p className="Prp-Lp-Welcome-Headline Prp-Lp-Welcome-HeadlineSecond">
             Get Placed.
           </p>
-          <p className="Prp-LandingPage-Hero-Description Prp-LandingPage-Hero-Description-Line1">
+          <p className="Prp-Lp-Welcome-Subtext Prp-Lp-Welcome-SubtextFirst">
             The all-in-one platform that bridges the gap between
           </p>
-          <p className="Prp-LandingPage-Hero-Description Prp-LandingPage-Hero-Description-Line2">
+          <p className="Prp-Lp-Welcome-Subtext Prp-Lp-Welcome-SubtextSecond">
             talented individuals, top employers and training institutions.
           </p>
-          <button type="button" className="Prp-LandingPage-Hero-Button Prp-LandingPage-Hero-Button-Primary">
+          <button type="button" className="Prp-Lp-Welcome-Actions Prp-Lp-Welcome-CTA">
             Get Started
           </button>
-          <button type="button" className="Prp-LandingPage-Hero-Button Prp-LandingPage-Hero-Button-Secondary">
+          <button type="button" className="Prp-Lp-Welcome-Actions Prp-Lp-Welcome-AltCTA">
             Explore Jobs
           </button>
-          <img src={InterviewBro} alt="Interview illustration" className="Prp-LandingPage-Hero-Image" />
+          <img src={InterviewBro} alt="Interview illustration" className="Prp-Lp-Welcome-HeroArt" />
         </section>
 
-        <section className="Prp-LandingPage-Features-Section">
-          <p className="Prp-LandingPage-Features-Eyebrow">WHY CHOOSE US</p>
-          <h2 className="Prp-LandingPage-Features-Title">
+        <section className="Prp-Lp-Highlights">
+          <p className="Prp-Lp-Highlights-Label">WHY CHOOSE US</p>
+          <h2 className="Prp-Lp-Highlights-Heading">
             Everything You Need for a Successful Career
           </h2>
-          <div className="Prp-LandingPage-Features-Grid">
+          <div className="Prp-Lp-Highlights-Grid">
             {featureCards.map((card) => (
-              <article key={card.title} className="Prp-LandingPage-Features-Card">
-                <img src={card.icon} alt="" className="Prp-LandingPage-Features-CardIcon" />
-                <h3 className="Prp-LandingPage-Features-CardTitle">{card.title}</h3>
-                <p className="Prp-LandingPage-Features-CardDescription">
+              <div key={card.title} className="Prp-Lp-Highlights-Card">
+                <img src={card.icon} alt="" className="Prp-Lp-Highlights-Icon" />
+                <h3 className="Prp-Lp-Highlights-Title">{card.title}</h3>
+                <p className="Prp-Lp-Highlights-Text">
                   {card.description}
                 </p>
-              </article>
+              </div>
             ))}
           </div>
         </section>
 
-        <section className="Prp-LandingPage-Testimonials-Section">
-          <p className="Prp-LandingPage-Testimonials-Eyebrow">SUCCESS STORIES</p>
-          <h2 className="Prp-LandingPage-Testimonials-Title">WHAT OUR USERS SAY</h2>
-          <div className="Prp-LandingPage-Testimonials-Grid">
+        <section className="Prp-Lp-Reviews">
+          <p className="Prp-Lp-Reviews-Label">SUCCESS STORIES</p>
+          <h2 className="Prp-Lp-Reviews-Heading">WHAT OUR USERS SAY</h2>
+          <div className="Prp-Lp-Reviews-Grid">
             {testimonials.map((item) => (
-              <article key={item.name} className="Prp-LandingPage-Testimonials-Card">
-                <img src={QuoteIcon} alt="" className="Prp-LandingPage-Testimonials-QuoteIcon" />
-                <div className="Prp-LandingPage-Testimonials-CardHeader">
-                  <img src={TestimonialUserAvatar} alt="" className="Prp-LandingPage-Testimonials-CardAvatar" />
-                  <div className="Prp-LandingPage-Testimonials-CardMeta">
-                    <div className="Prp-LandingPage-Testimonials-CardStars">
+              <div key={item.name} className="Prp-Lp-Reviews-Card">
+                <img src={QuoteIcon} alt="" className="Prp-Lp-Reviews-Quote" />
+                <div className="Prp-Lp-Reviews-Header">
+                  <img src={TestimonialUserAvatar} alt="" className="Prp-Lp-Reviews-Avatar" />
+                  <div className="Prp-Lp-Reviews-Details">
+                    <div className="Prp-Lp-Reviews-Rating">
                       {Array.from({ length: 5 }).map((_, i) => (
-                        <img key={i} src={StarIcon} alt="" className="Prp-LandingPage-Testimonials-CardStar" />
+                        <img key={i} src={StarIcon} alt="" className="Prp-Lp-Reviews-Star" />
                       ))}
                     </div>
-                    <p className="Prp-LandingPage-Testimonials-CardName">{item.name}</p>
-                    <p className="Prp-LandingPage-Testimonials-CardRole">{item.role}</p>
+                    <p className="Prp-Lp-Reviews-Name">{item.name}</p>
+                    <p className="Prp-Lp-Reviews-Role">{item.role}</p>
                   </div>
                 </div>
-                <p className="Prp-LandingPage-Testimonials-CardQuote">{item.quote}</p>
-              </article>
+                <p className="Prp-Lp-Reviews-Text">{item.quote}</p>
+              </div>
             ))}
           </div>
         </section>
 
-        <section className="Prp-LandingPage-Trusted-Section">
-          <p className="Prp-LandingPage-Trusted-Eyebrow">TRUSTED BY Leading Companies</p>
-          <h2 className="Prp-LandingPage-Trusted-Title">Top companies hire here</h2>
-          <div className="Prp-LandingPage-Trusted-Logos">
+        <section className="Prp-Lp-Partners">
+          <p className="Prp-Lp-Partners-Label">TRUSTED BY Leading Companies</p>
+          <h2 className="Prp-Lp-Partners-Heading">Top companies hire here</h2>
+          <div className="Prp-Lp-Partners-Logos">
             {companyLogos.map((logo) => (
-              <img key={logo.alt} src={logo.src} alt={logo.alt} className="Prp-LandingPage-Trusted-Logo" />
+              <img key={logo.alt} src={logo.src} alt={logo.alt} className="Prp-Lp-Partners-Logo" />
             ))}
           </div>
         </section>
 
-        <footer className="Prp-LandingPage-Footer">
-          <div className="Prp-LandingPage-Footer-Columns">
-            <div className="Prp-LandingPage-Footer-Column">
-              <p className="Prp-LandingPage-Footer-Heading">COMPANY</p>
-              <a href="#" className="Prp-LandingPage-Footer-Link">About Us</a>
-              <a href="#" className="Prp-LandingPage-Footer-Link">Careers</a>
-              <a href="#" className="Prp-LandingPage-Footer-Link">contact</a>
+        <footer className="Prp-Lp-Footer">
+          <div className="Prp-Lp-Footer-Columns">
+            <div className="Prp-Lp-Footer-Column">
+              <p className="Prp-Lp-Footer-Heading">COMPANY</p>
+              <Link to="#" className="Prp-Lp-Footer-Link">About Us</Link>
+              <Link to="#" className="Prp-Lp-Footer-Link">Careers</Link>
+              <Link to="#" className="Prp-Lp-Footer-Link">contact</Link>
             </div>
-            <div className="Prp-LandingPage-Footer-Column">
-              <p className="Prp-LandingPage-Footer-Heading">Platform</p>
-              <a href="#" className="Prp-LandingPage-Footer-Link">Job Postings</a>
-              <a href="#" className="Prp-LandingPage-Footer-Link">AI Resume Matching</a>
-              <a href="#" className="Prp-LandingPage-Footer-Link">Training &amp; skill Readiness</a>
-              <a href="#" className="Prp-LandingPage-Footer-Link">Placement Analytics</a>
+            <div className="Prp-Lp-Footer-Column">
+              <p className="Prp-Lp-Footer-Heading">Platform</p>
+              <Link to="#" className="Prp-Lp-Footer-Link">Job Postings</Link>
+              <Link to="#" className="Prp-Lp-Footer-Link">AI Resume Matching</Link>
+              <Link to="#" className="Prp-Lp-Footer-Link">Training & skill Readiness</Link>
+              <Link to="#" className="Prp-Lp-Footer-Link">Placement Analytics</Link>
             </div>
-            <div className="Prp-LandingPage-Footer-Column">
-              <p className="Prp-LandingPage-Footer-Heading">SUPPORT</p>
-              <a href="#" className="Prp-LandingPage-Footer-Link">Help Center</a>
-              <a href="#" className="Prp-LandingPage-Footer-Link">FAQ</a>
-              <a href="#" className="Prp-LandingPage-Footer-Link">Raise Issue</a>
-              <a href="#" className="Prp-LandingPage-Footer-Link">Contact Support</a>
+            <div className="Prp-Lp-Footer-Column">
+              <p className="Prp-Lp-Footer-Heading">SUPPORT</p>
+              <Link to="#" className="Prp-Lp-Footer-Link">Help Center</Link>
+              <Link to="#" className="Prp-Lp-Footer-Link">FAQ</Link>
+              <Link to="#" className="Prp-Lp-Footer-Link">Raise Issue</Link>
+              <Link to="#" className="Prp-Lp-Footer-Link">Contact Support</Link>
             </div>
-            <div className="Prp-LandingPage-Footer-Column Prp-LandingPage-Footer-Column-Legal">
-              <p className="Prp-LandingPage-Footer-Heading">LEGAL</p>
-              <p className="Prp-LandingPage-Footer-Legal">
-                Privacy Policy{'\n'} Terms &amp; Conditions{'\n'} Cookie Policy
+            <div className="Prp-Lp-Footer-Column Prp-Lp-Footer-LegalColumn">
+              <p className="Prp-Lp-Footer-Heading">LEGAL</p>
+              <p className="Prp-Lp-Footer-LegalText">
+                Privacy Policy{'\n'} Terms & Conditions{'\n'} Cookie Policy
               </p>
             </div>
           </div>
-          <div className="Prp-LandingPage-Footer-Bottom">
-            <p className="Prp-LandingPage-Footer-Copy">
+          <div className="Prp-Lp-Footer-Bottom">
+            <p className="Prp-Lp-Footer-Copyright">
               © 2026 Placement and Recruitment Platform.
             </p>
-            <div className="Prp-LandingPage-Footer-Socials">
-              <a href="#" aria-label="Facebook">
+            <div className="Prp-Lp-Footer-Socials">
+              <Link to="#" aria-label="Facebook">
                 <img src={FacebookIcon} alt="" />
-              </a>
-              <a href="#" aria-label="Twitter">
+              </Link>
+              <Link to="#" aria-label="Twitter">
                 <img src={TwitterXIcon} alt="" />
-              </a>
-              <a href="#" aria-label="Instagram">
+              </Link>
+              <Link to="#" aria-label="Instagram">
                 <img src={InstagramIcon} alt="" />
-              </a>
+              </Link>
             </div>
           </div>
         </footer>
